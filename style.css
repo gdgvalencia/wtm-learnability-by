@@ -1,0 +1,256 @@
+body {
+  background-color: #F6F3E1;
+  font-family: "Circular Std Book";
+  color: #1B2D45;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 32px;
+   color: #5390F4;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 32px;
+  color: #00BFA5;
+}
+
+h3 {
+  font-size: 20px;
+   color: #5390F4;
+}
+
+h1, h2, h3 {
+  font-family: "Circular Std Medium";
+ 
+}
+
+h4 {
+  font-family: "Circular Std Black";
+  color: #5390F4;
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #00BFA5;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+main, footer {
+  padding: 16px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #5390F4;
+}
+
+.footer-logo {
+  width: 100px;
+  height: 32px;
+}
+
+.wtm {
+  background-color: #5390F4;
+  margin-bottom: 16px;
+}
+
+.gdg {
+  background-color: #20E9B7;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items li:not(:last-child) {
+  padding-right: 16px;
+}
+
+.hero-wrapper {
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+}
+
+.statement {
+  text-align: center;
+}
+
+.values, .news {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.title {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.separator {
+  width: 90%;
+  height: 6px;
+  background-color: #5390F4;
+  margin: 0;
+}
+
+.value-title {
+  margin-bottom: 4px;
+}
+
+.intro {
+  font-family: "Circular Std Medium";
+}
+
+.learning-with {
+  padding: 8px;
+}
+
+.with-box {
+  background-color: #f5f4ef;
+  border-radius: 30px;
+  padding: 16px;
+}
+
+.cover-neus {
+  height: 342px;
+  background-image: url("images/neus-portas.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.quote {
+  font-size: 20px;
+  line-height: 36px;
+  font-family: "Circular Std Book Italic";
+}
+
+.cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cover-event {
+  height: 400px;
+}
+
+.event-summit {
+  background-image: url("images/wtm-summit-07.jpg");
+}
+
+.event-description {
+  margin-bottom: 24px;
+}
+
+.button-19 {
+  display: inline-block;
+  border: 1px solid #5390F4;
+  padding: 16px 24px;
+  border-radius: 30px;
+  background-color: #5390F4;
+  color: #F6F3E1;
+  margin-bottom: 16px;
+}
+
+.news-item-title {
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #1B2D45;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.news-media {
+  color: #20E9B7;
+  margin-bottom: 2px;
+}
+
+.news-date {
+  color: #A7A5A5;
+  margin-top: 2px;
+}
+
+.cover-news {
+  height: 200px;
+}
+
+.news-item-vp-left {
+  background-image: url("images/vplaza1.jpg");
+  border-radius: 16px;
+}
+
+.news-item-r {
+  background-image: url("images/referente.jpg");
+  border-radius: 16px;
+}
+
+.news-item-vp-right {
+  background-image: url("images/vplaza-2.jpg");
+  border-radius: 16px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  border-top: 1px solid #20E9B7;
+}
+.us, .about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo-rrss {
+  flex: 1;
+  height: 150px;
+  background-image: url("images/logo-social-media.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.claim {
+  flex: 2;
+  margin-left: 12px;
+  margin-right: 32px;
+}
+
+.claim-more {
+  color: #20E9B7;
+  font-family: "Circular Std Medium";
+}
+
+.past-events ul, .organizers ul, .follow ul {
+  padding: 0;
+}
+
+.past-events li, .follow li {
+  padding-bottom: 8px;
+}
+
+.past-events {
+  flex: 3;
+}
+
+.organizers {
+  flex: 2;
+  margin-right: 16px;
+}
+
+
+
+
