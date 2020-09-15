@@ -7,6 +7,8 @@ body {
   line-height: calc(1.5em + 0.5vw);
 }
 
+/* General styles */
+
 h1 {
   font-size: calc(1.5rem + 1.5vw);
   color: #5390F4;
@@ -19,24 +21,31 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: calc(1rem + 1.5vw);
    color: #5390F4;
+   margin-bottom: 4px;
 }
 
 h1, h2, h3 {
   font-family: "Circular Std Medium";
+  margin: 0;
 }
 
 h4 {
-
   font-family: "Circular Std Black";
   color: #5390F4;
-  margin-bottom: 16px;
+  margin-bottom: 4px;
+  margin-top: 6px;
 }
 
 a {
   text-decoration: none;
   color: #00BFA5;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
 }
 
 main, footer {
@@ -51,6 +60,28 @@ nav {
   height: 65px;
 }
 
+.title {
+  margin: 16px
+  text-align: center;
+}
+
+.valunes, .learning-with, .event, .news {
+    margin-bottom: 60px;
+}
+
+.cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 400px */
+@media (min-width: 25em) {
+  main, footer {
+    padding: 30px;
+  }
+}
+
+/* Menu styles */
 #menu {
   position: absolute;
   width: 280px;
@@ -145,15 +176,12 @@ a:hover {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-ul {
-  padding: 0;
-  list-style: none;
-}
 
 .wtm-logo {
   height: 80px;
 }
 
+/* hero styles */
 .hero-wrapper {
   width: 100%;
   margin-top: 32px;
@@ -168,15 +196,24 @@ ul {
   text-align: center;
 }
 
+/* 400px */
+@media (min-width: 25em) {
+  .statement { 
+    margin: 0 100px;
+  }
+}
+
+/* Values section styles */
 .values, .news {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.title {
-  margin-bottom: 16px;
-  text-align: center;
+.with-box {
+  background-color: #f5f4ef;
+  border-radius: 30px;
+  padding: 16px;
 }
 
 .separator {
@@ -186,22 +223,20 @@ ul {
   margin: 0;
 }
 
-.value-title {
-  margin-bottom: 4px;
-}
-
 .intro {
   font-family: "Circular Std Medium";
 }
 
-.learning-with {
-  padding: 8px;
+/* 400px */
+@media (min-width: 25em) {
+  .values, .news { 
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
 }
 
-.with-box {
-  background-color: #f5f4ef;
-  border-radius: 30px;
-  padding: 16px;
+/* Learning with: styles */
+.learning-with {
+  padding: 8px;
 }
 
 .cover-neus {
@@ -217,21 +252,28 @@ ul {
   font-family: "Circular Std Book Italic";
 }
 
-.cover {
-  background-repeat: no-repeat;
-  background-size: cover;
+/* 400px */
+@media (min-width: 25em) {
+  .learning-with { 
+    display: grid;
+    grid-template-columns: minmax(150px, 35%) 1fr;
+  }
+
+  .cover-neus {
+    margin-right: 26px;
+    margin-top: 32px;
+  }
 }
 
+/* WTM events section */
 .cover-event {
   height: 400px;
+  margin-bottom: 16px;
+  border-radius: 30px;
 }
 
 .event-summit {
   background-image: url("images/wtm-summit-07.jpg");
-}
-
-.event-description {
-  margin-bottom: 24px;
 }
 
 .button-19 {
@@ -244,6 +286,7 @@ ul {
   margin-bottom: 16px;
 }
 
+/* Press and news section styles */
 .news-item-title {
   font-size: 18px;
   line-height: 26px;
@@ -282,6 +325,15 @@ ul {
   border-radius: 16px;
 }
 
+@media (min-width: 25em) {
+  .news { 
+    display: grid;
+    grid-template: auto auto auto / auto auto auto;
+  }
+}
+
+/* Footer styles */
+
 footer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
@@ -302,13 +354,7 @@ footer {
   background-color: #20E9B7;
 }
 
-.us, .about {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .logo-rrss {
-  flex: 1;
   height: 150px;
   background-image: url("images/logo-social-media.svg");
   background-size: contain;
@@ -316,7 +362,6 @@ footer {
 }
 
 .claim {
-  flex: 2;
   margin-left: 12px;
   margin-right: 32px;
 }
@@ -334,13 +379,18 @@ footer {
   padding-bottom: 8px;
 }
 
-.past-events {
-  flex: 3;
-}
 
-.organizers {
-  flex: 2;
-  margin-right: 16px;
+/* 400 */
+@media (min-width: 25em) {
+  footer {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+
+  }
+  .us, .about, .organizers, .follow {
+  }
+  .claim {
+    margin-right: 0;
+  }
 }
 
 
