@@ -334,10 +334,14 @@ a:hover {
 
 /* Footer styles */
 
-footer {
+.footer-links {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  border-top: 1px solid #20E9B7;
+}
+
+.us {
+    border-top: 1px solid #20E9B7;
+    padding: 32px 0;
 }
 
 .footer-logo {
@@ -361,11 +365,6 @@ footer {
   background-repeat: no-repeat;
 }
 
-.claim {
-  margin-left: 12px;
-  margin-right: 32px;
-}
-
 .claim-more {
   color: #20E9B7;
   font-family: "Circular Std Medium";
@@ -382,14 +381,21 @@ footer {
 
 /* 400 */
 @media (min-width: 25em) {
-  footer {
+  .footer-links {
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
 
+  .us {
+    display: flex;
+    flex-wrap: wrap;
   }
-  .us, .about, .organizers, .follow {
+
+  .logo-rrss {
+    flex: 1;
   }
+
   .claim {
-    margin-right: 0;
+    flex: 2;
   }
 }
 
