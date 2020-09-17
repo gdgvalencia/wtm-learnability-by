@@ -1,0 +1,389 @@
+body {
+  background-color: #F6F3E1;
+  font-family: "Circular Std Book";
+  color: #1B2D45;
+  box-sizing: border-box;
+  font-size: calc(16px + 0.2vw);
+  line-height: calc(1.5em + 0.5vw);
+  margin: 0;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.hero-container {
+  background-color: #A7A5A5;
+  width: 100vw;
+  height: 80vh;
+  margin-top: 5rem;
+  overflow: hidden;
+}
+
+.nav-container {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  background: #20E9B7;
+  height: 10vh;
+  overflow: hidden;
+}
+
+.statement {
+  width: 100vw;
+  height: 20vh;
+  background: #20E9B7;
+}
+
+.title {
+  background-color: #5390F4;
+  text-align: center;
+}
+
+.line-up-container {
+  width: 90vw;
+  margin: auto;
+}
+
+@media (min-width: 25em) {
+  .line-up-container {
+    display: grid;
+    height: auto;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.value-item {
+ display: grid;
+ grid-template-rows: auto 1fr auto;
+}
+
+.item-title {
+  background-color: thistle;
+}
+
+.item-description {
+  background-color: thistle;
+  height: 10vh;
+}
+
+.item-underline {
+  width: 90%;
+  height: 6px;
+  background-color: #5390F4;
+  margin: 0;
+}
+
+.span-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.intro {
+  grid-column: 1 / 13;
+  background-color: thistle;
+}
+
+.intro-container, .quote-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 1em;
+}
+
+.intro-box {
+  flex: 3;
+}
+
+.intro-box h1 {
+  margin-bottom: .5em;
+}
+
+.intro-box h2 {
+  text-transform: uppercase;
+  text-align: right;
+  margin-bottom: 0;
+  padding-right: 1em;
+}
+
+.intro-box p {
+  text-align: right;
+  margin-top: 0;
+  padding-right: 1em;
+}
+
+.portrait {
+  flex: 1;
+  background-image: url("images/neus-portas.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-bottom: .5em;
+}
+
+.video {
+  grid-column: 1 / 13;
+  background-color: #5390F4;
+  width: 100%;
+  height: 390px;
+}
+
+.bio {
+  grid-column: 1 / 13;
+  background-color: #20E9B7;
+  width: 100%;
+  height: 380px;
+}
+
+.quote {
+  grid-column: 1 / 13;
+  background-color: #F6F3E1;
+  width: 100%;
+}
+
+.quote-text {
+  width: 40%;
+  border-radius: 50%;
+  shape-outside: ellipse();
+  background-clip: content-box;
+  margin-top: 5em;
+
+}
+/* https://medium.co
+m/@nicke920/wrapping-content-around-images-using-css-shapes-2fb17c8fde4e 
+
+https://css-tricks.com/set-text-on-a-circle/ */
+.legendary {
+  /* flex: 2; */
+  background-image: url("images/marie-curie.png");
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  height: 200px;
+  width: 50%;
+}
+
+@media (min-width: 25em) {
+  .intro {
+    grid-column: 4 /10;
+  }
+
+  .video {
+    grid-column: 1 / 13;
+    height: 390px;
+  }
+
+  .bio {
+    grid-column: 1 / span 5;
+    height: 380px;
+  }
+
+  .quote {
+    grid-column: 6 / span 9; 
+  }
+}
+
+@media (min-width: 62em) {
+  .intro {
+    grid-column: 5 /10;
+  }
+
+  .video {
+    grid-column: 1 / span 8;
+    height: 390px;
+  }
+
+  .bio {
+    grid-column: 9 / span 4;
+    height: 380px;
+  }
+
+  .quote {
+    grid-column: 1 / span 4; 
+  }
+
+}
+
+@media (min-width: 82.5em) {
+  .intro {
+    grid-column: 4 / 13;
+  }
+
+  .video {
+    grid-column: 1 / 8;
+  }
+
+  .bio {
+    grid-column: 8 / span 5;
+  }
+
+  .quote {
+    grid-column: 3 / span 9; 
+  }
+
+  .intro-box {
+    flex: 2;
+  }
+
+}
+
+.summit-title {
+  grid-column: 2 / 12;
+  background-color: #5390F4;
+}
+
+.summit {
+  grid-column: 1 /13;
+}
+
+.summit-img {
+  background-image: url("images/wtm-summit-07.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  aspect-ratio: 16 / 9;
+}
+
+.description {
+  grid-column: 1 / 13;
+  background-color: thistle;
+  height: 25vh;
+  padding: 1em;
+}
+
+.description p {
+  background-color: #20E9B7;
+  height: 10vh;
+}
+
+.description a {
+  background-color: #5390F4;
+}
+
+@media (min-width: 25em) {
+  .summit-container {
+    grid-auto-flow: dense;
+  }
+  
+  .summit-title {
+    grid-column: 4 / 9;
+  }
+
+  .description {
+    grid-column: 3 / 11;
+  }
+}
+
+@media (min-width: 80.2em) {
+  .summit {
+    grid-column: span 7 / 13;
+  }
+  .description {
+    grid-column: 2 / span 4;
+  }
+}
+
+/* Menu styles */
+#menu {
+  position: absolute;
+  width: 280px;
+  height: 400px;
+  box-shadow: 0 0 10px #A7A5A5;
+  margin: -50px 0 0 -50px;
+  padding: 50px;
+  padding-top: 75px;
+  background-color: #f5f4ef;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  /* transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); */
+}
+
+#menu li {
+  padding: 10px 0;
+  transition-delay: 1s;
+}
+
+a {
+  text-decoration: none;
+  color: #20E9B7;
+  opacity:1;
+}
+
+a:hover {
+  opacity:0.5;
+}
+
+#menuToggle {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 25px;
+  left: 25px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: flex; 
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  width: 26px;
+  height: 26px;
+}
+
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+#menuToggle span {
+  display: flex;
+  width: 29px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #5390F4;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+/* Hamburguer icon and animation */
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: #5390F4;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.wtm-logo {
+  height: 80px;
+}
