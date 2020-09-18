@@ -30,7 +30,6 @@ body {
   top: 0;
   background: #20E9B7;
   height: 10vh;
-
 }
 
 .statement {
@@ -40,7 +39,6 @@ body {
 }
 
 .title {
-  background-color: #5390F4;
   text-align: center;
 }
 
@@ -48,9 +46,16 @@ body {
   width: 100vw; 
   margin: auto;
   overflow: hidden;
+
+}
+
+.full-container .values {
   background-color: #f5f4ef;
 }
 
+.full-container .women {
+  background-color: #5390F4;
+}
 .line-up-container {
   margin-bottom: calc(1em + 5vh);
   margin: auto;
@@ -63,8 +68,8 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.values {
-  padding: 1em;
+.cards {
+  padding: 2em;
 }
 
 .card {
@@ -95,6 +100,8 @@ body {
   margin-left: .5em;
 }
 
+/* lauching interview */
+
 .span-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -102,7 +109,6 @@ body {
 
 .intro {
   grid-column: 1 / 13;
-  background-color: thistle;
 }
 
 .intro-container, .quote-container {
@@ -144,21 +150,23 @@ body {
 
 .video {
   grid-column: 1 / 13;
-  background-color: #5390F4;
-  width: 100%;
-  height: 390px;
+}
+
+.embed {
+  background-color: thistle;
+  margin: auto;
+  width: 90%;
+  height: 300px;
 }
 
 .bio {
-  grid-column: 1 / 13;
-  background-color: #20E9B7;
-  width: 100%;
-  height: 380px;
+  grid-column: 1 / 12;
+  padding: 1em;
+  width: 90vw;
 }
 
 .quote {
   grid-column: 1 / 13;
-  background-color: #F6F3E1;
   width: 100%;
 }
 
@@ -168,6 +176,7 @@ body {
   shape-outside: ellipse();
   background-clip: content-box;
   margin-top: 5em;
+  margin-left: 3em;
 
 }
 /* https://medium.co
@@ -181,8 +190,8 @@ https://css-tricks.com/set-text-on-a-circle/ */
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode: luminosity;
-  height: 200px;
   width: 50%;
+  margin-right: 2em;
 }
 
 @media (min-width: 25em) {
@@ -192,12 +201,19 @@ https://css-tricks.com/set-text-on-a-circle/ */
 
   .video {
     grid-column: 1 / 13;
+    
+  }
+
+  .embed {
+    background-color: thistle;
     height: 390px;
   }
 
   .bio {
-    grid-column: 1 / span 5;
-    height: 380px;
+    grid-column: 1 / span 4;
+    width: 36vw;
+    padding: 1em 1em 0em 3em;
+    margin-top: 2em;
   }
 
   .quote {
@@ -211,17 +227,21 @@ https://css-tricks.com/set-text-on-a-circle/ */
   }
 
   .video {
-    grid-column: 1 / span 8;
+    grid-column: 1 / 13;
     height: 390px;
   }
 
   .bio {
-    grid-column: 9 / span 4;
-    height: 380px;
+    grid-column: 1 / span 5;
+
+  }
+
+  .bio p {
+    margin: 0;
   }
 
   .quote {
-    grid-column: 1 / span 4; 
+    grid-column: 6 / span 8; 
   }
 
 }
