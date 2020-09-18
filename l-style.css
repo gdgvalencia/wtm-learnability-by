@@ -57,7 +57,7 @@ body {
   }
 }
 
-.value-item {
+.value-item, .news-item {
  display: grid;
  grid-template-rows: auto 1fr auto;
 }
@@ -288,6 +288,41 @@ https://css-tricks.com/set-text-on-a-circle/ */
     grid-column: 2 / span 4;
   }
 }
+
+.cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  border-radius: 30px;
+}
+
+.first {
+  background-image: url("images/vplaza1.jpg");
+}
+
+.second {
+ background-image: url("images/referente.jpg");
+}
+
+.third {
+ background-image: url("images/vplaza-2.jpg");
+}
+
+footer {
+  border-top: 1px solid #fff;
+  padding-top: 2em;
+}
+
+.sm-logo {
+  background-image: url("images/logo-social-media.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 15vh;
+}
+
+
 
 /* Menu styles */
 #menu {
