@@ -75,7 +75,8 @@ body {
 .value-item {
   border: 3px solid #20E9B7;
   border-radius: 30px;
-  box-shadow: 5px 10px #888888;;
+  box-shadow: 5px 10px #888888;
+  margin-bottom: 3em;
 }
 
 .item-title, .post {
