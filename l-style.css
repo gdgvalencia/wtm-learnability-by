@@ -68,7 +68,7 @@ ul {
   background-color: #f5f4ef;
 }
 
-.full-container .women {
+.full-container.featured {
   background-color: #5390F4;
 }
 
@@ -86,6 +86,13 @@ ul {
     display: grid;
     grid-gap: 3rem;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 82.5em) {
+  .women-container {
+    width: 80vw;
+    margin: auto;
   }
 }
 
@@ -146,10 +153,9 @@ ul {
 }
 
 @media (min-width: 82.5em) {
-  .full-container {
+  .full-container.values {
     width: 80vw;
   }
-
 }
 
 
@@ -300,16 +306,22 @@ https://css-tricks.com/set-text-on-a-circle/ */
 }
 
 @media (min-width: 82.5em) {
+  .intro-container {
+    margin: 3em 1em;
+  }
   .intro {
-    grid-column: 4 / 13;
+    grid-column: 3 / 10;
   }
 
   .video {
-    grid-column: 1 / 8;
+    grid-column: 1 / 7;
   }
 
   .bio {
-    grid-column: 8 / span 5;
+    grid-column: 7 / span 5;
+    width: 34vw;
+    padding: 0em 1em 0em 3em;
+    margin-top: 0;
   }
 
   .quote {
