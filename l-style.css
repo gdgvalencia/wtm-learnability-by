@@ -6,13 +6,16 @@ body {
   font-size: calc(16px + 0.2vw);
   line-height: calc(1.5em + 0.5vw);
   margin: 0;
+  letter-spacing: .06em;
   font-family: 'Quattrocento', serif;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Raleway', sans-serif;
-  letter-spacing: .2em;
+  letter-spacing: .15em;
   text-transform: uppercase;
+  line-height: calc(1.2em + 1vw);
+  font-weight: 600;
 }
 
 ul {
@@ -59,7 +62,6 @@ ul {
   width: 100vw; 
   margin: auto;
   overflow: hidden;
-
 }
 
 .full-container .values {
@@ -86,6 +88,7 @@ ul {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 .cards {
   padding: 2em;
 }
@@ -108,15 +111,47 @@ ul {
 }
 
 .item-description {
-  padding: 1em;
+  padding: .5em .8em;
 }
 
 .item-underline {
-  width: 90%;
+  width: 95%;
   height: 6px;
   background-color: #5390F4;
   margin-left: .5em;
 }
+
+@media (min-width: 25em)  {
+  .line-up-container {
+    grid-gap: 1rem;
+  }
+
+  .item-title {
+    padding: 0 0 0 .3em;
+  }
+
+  .cards {
+    padding: 1em;
+  }
+}
+
+@media (min-width: 62em) {
+  .line-up-container {
+    grid-gap: 3rem;
+  }
+
+   .cards {
+    padding: 2em;
+  }
+}
+
+@media (min-width: 82.5em) {
+  .full-container {
+    width: 80vw;
+  }
+
+}
+
 
 /* lauching interview */
 
@@ -163,7 +198,7 @@ ul {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-  margin-bottom: .5em;
+  margin-bottom: 1.7em;
 }
 
 .video {
@@ -179,8 +214,8 @@ ul {
 
 .bio {
   grid-column: 1 / 12;
-  padding: 1em;
-  width: 90vw;
+  padding: 1em 2em;
+  width: 80vw;
 }
 
 .quote {
