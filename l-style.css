@@ -6,6 +6,13 @@ body {
   font-size: calc(16px + 0.2vw);
   line-height: calc(1.5em + 0.5vw);
   margin: 0;
+  font-family: 'Quattrocento', serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: .2em;
+  text-transform: uppercase;
 }
 
 ul {
