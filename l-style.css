@@ -56,9 +56,14 @@ body {
 .full-container .women {
   background-color: #5390F4;
 }
+
 .line-up-container {
   margin-bottom: calc(1em + 5vh);
   margin: auto;
+}
+
+.news-container {
+  padding: 2em;
 }
 
 @media (min-width: 25em) {
@@ -349,7 +354,8 @@ https://css-tricks.com/set-text-on-a-circle/ */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 20vh;
+  height: 25vh;
+  max-height: 100%;
   border-radius: 30px;
 }
 
@@ -363,6 +369,38 @@ https://css-tricks.com/set-text-on-a-circle/ */
 
 .third {
  background-image: url("images/vplaza-2.jpg");
+}
+
+@media (min-width: 25em) and (orientation: landscape) {
+  .cover {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 25em) and (orientation: portrait) {
+  .cover {
+    height: 15vh;
+  }
+}
+
+@media (min-width: 62em) and (orientation: portrait){
+  .cover {
+    background-size: contain;
+    height: 15vh;
+  }
+}
+
+@media (min-width: 62em) and (orientation: landscape){
+  .cover {
+    background-size: contain;
+    height: 25vh;
+  }
+}
+
+@media (min-width: 80.2em) {
+  .cover {
+    background-size: cover;
+  }
 }
 
 footer {
