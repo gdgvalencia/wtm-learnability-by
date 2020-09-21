@@ -8,6 +8,12 @@ body {
   margin: 0;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 
 .main-container {
   display: grid;
@@ -417,6 +423,12 @@ https://css-tricks.com/set-text-on-a-circle/ */
 footer {
   border-top: 1px solid #fff;
   padding-top: 2em;
+  width: 90%;
+  margin: auto;
+}
+
+.footer-container {
+  place-items: center;
 }
 
 .sm-logo {
