@@ -70,6 +70,8 @@ ul {
 
 .full-container.featured {
   background-color: #5390F4;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .line-up-container {
@@ -189,7 +191,6 @@ ul {
 }
 
 .intro-box h2 {
-  text-transform: uppercase;
   text-align: center;
   margin-bottom: 0;
   padding-right: 1em;
@@ -229,30 +230,34 @@ ul {
 .quote {
   grid-column: 1 / 13;
   width: 100%;
+
 }
 
 .quote-text {
   width: 40%;
-  border-radius: 50%;
-  shape-outside: ellipse();
-  background-clip: content-box;
-  margin-top: 5em;
-  margin-left: 3em;
-
+  margin-left: 1em;    
 }
 /* https://medium.co
 m/@nicke920/wrapping-content-around-images-using-css-shapes-2fb17c8fde4e 
 
 https://css-tricks.com/set-text-on-a-circle/ */
 .legendary {
-  /* flex: 2; */
-  background-image: url("images/marie-curie.png");
+  background-image: url("images/Ellipse\ 6.svg");
   background-position: top right;
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode: luminosity;
-  width: 50%;
-  margin-right: 2em;
+
+  margin-right: 1em;
+  mix-blend-mode: overlay;
+
+ width: 40%;
+ /* float: right;
+ background-color: red;
+ padding: 30px;
+ clip-path: circle();
+ shape-outside: circle(); */
+
 }
 
 @media (min-width: 25em) {
@@ -272,12 +277,8 @@ https://css-tricks.com/set-text-on-a-circle/ */
     grid-row: 2 / 3;
   }
 
-  .portrait {
-    height: 12vh;
-  }
-
   .intro {
-    grid-column: 4 /10;
+    grid-column: 4 /11;
   }
 
   .video {
@@ -302,31 +303,6 @@ https://css-tricks.com/set-text-on-a-circle/ */
   }
 }
 
-@media (min-width: 62em) {
-  .intro {
-    grid-column: 5 /10;
-  }
-
-  .video {
-    grid-column: 1 / 13;
-    height: 390px;
-  }
-
-  .bio {
-    grid-column: 1 / span 5;
-
-  }
-
-  .bio p {
-    margin: 0;
-  }
-
-  .quote {
-    grid-column: 6 / span 8; 
-  }
-
-}
-
 @media (min-width: 25em) and (orientation: portrait) {
   .portrait {
     height: 86px;
@@ -339,10 +315,62 @@ https://css-tricks.com/set-text-on-a-circle/ */
   }
 }
 
-@media (min-width: 82.5em) {
-  .intro-container {
-    margin: 3em 1em;
+@media (min-width: 62em) {
+  .portrait-container {
+    grid-row: 1 / 2;
+    margin-top: 1em;
   }
+
+  .intro-container {
+    grid-template-rows: repeat(1, 1fr);
+    margin-top: 2em;
+  }
+  
+  .intro {
+    grid-column: 4 / 11;
+  }
+
+  .intro-box {
+    text-align: right;
+  }
+
+  .intro-box h1, .intro-box h2, .intro-box p {
+    text-align: right;
+    padding-right: 0;
+  }
+
+  .portrait {
+    height: 192px;
+  }
+
+  .video {
+    grid-column: 1 / 13;
+    height: 390px;
+  }
+
+  .bio {
+    grid-column: 1 / span 5;
+  }
+
+  .bio p {
+    margin: 0;
+  }
+
+  .quote {
+    grid-column: 6 / span 8; 
+  }
+
+  .quote-text {
+    margin-top: 1em;
+    font-size: calc(26px + 0.2vw);
+    line-height: calc(1.5em + 0.5vw);
+  }
+
+}
+
+
+
+@media (min-width: 82.5em) {
   .intro {
     grid-column: 3 / 10;
   }
@@ -359,13 +387,8 @@ https://css-tricks.com/set-text-on-a-circle/ */
   }
 
   .quote {
-    grid-column: 3 / span 9; 
+    grid-column: 2 / span 10; 
   }
-
-  .intro-box {
-    flex: 2;
-  }
-
 }
 
 .summit-title {
