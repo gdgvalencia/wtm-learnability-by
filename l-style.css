@@ -179,13 +179,6 @@ ul {
   margin: 1em;
 }
 
-.quote-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin: 1em;
-}
-
 .intro-box h1 {
   margin-bottom: .5em;
 }
@@ -230,34 +223,26 @@ ul {
 .quote {
   grid-column: 1 / 13;
   width: 100%;
+}
 
+.quote-container {
+  margin: 0 1em 3em 2em;
 }
 
 .quote-text {
-  width: 40%;
-  margin-left: 1em;    
+  display: flex;
+  flex-flow: row;
 }
-/* https://medium.co
-m/@nicke920/wrapping-content-around-images-using-css-shapes-2fb17c8fde4e 
 
-https://css-tricks.com/set-text-on-a-circle/ */
 .legendary {
+/* grid-column: 2/ 2; */
   background-image: url("images/Ellipse\ 6.svg");
-  background-position: top right;
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-blend-mode: luminosity;
-
-  margin-right: 1em;
   mix-blend-mode: overlay;
-
- width: 40%;
- /* float: right;
- background-color: red;
- padding: 30px;
- clip-path: circle();
- shape-outside: circle(); */
-
+  height: 170px;
+  width: 900px;
 }
 
 @media (min-width: 25em) {
@@ -312,6 +297,10 @@ https://css-tricks.com/set-text-on-a-circle/ */
 @media (min-width: 25em) and (orientation: landscape) {
    .portrait {
     height: 94px;
+  }
+
+  .quote-container {
+    margin: 3em 1em 3em 2em;
   }
 }
 
