@@ -286,6 +286,10 @@ ul {
   .quote {
     grid-column: 6 / span 9; 
   }
+
+  .quote-container {
+    margin: 3em 1em 3em 2em;
+  }
 }
 
 @media (min-width: 25em) and (orientation: portrait) {
@@ -349,15 +353,44 @@ ul {
     grid-column: 6 / span 8; 
   }
 
+  .quote-container {
+    margin: 3em 3em 3em 2em;;
+  }
+
+  .quote-text p {
+    margin: 0 0 0 2em;
+  }
+
   .quote-text {
-    margin-top: 1em;
     font-size: calc(26px + 0.2vw);
     line-height: calc(1.5em + 0.5vw);
   }
 
+
 }
 
+@media (min-width: 62em) and (orientation: landscape) {
+  .portrait {
+      margin-left: 2em;
+  }
 
+  .quote-container {
+    margin: 3em 0;
+  }
+
+  .legendary {
+    height: 230px;
+    width: 900px;
+  }
+}
+
+@media (min-width: 62em) and (orientation: portrait) {
+  .legendary {
+    background-size: cover;
+    height: 250px;
+    width: 1900px;
+  }
+}
 
 @media (min-width: 82.5em) {
   .intro {
