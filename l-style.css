@@ -79,8 +79,11 @@ ul {
   margin: auto;
 }
 
-.news-container {
-  padding: 2em;
+@media (min-width: 82.5em) {
+  .line-up-container.news {
+    width: 80vw;
+    margin: auto;
+  }
 }
 
 @media (min-width: 25em) {
@@ -96,19 +99,24 @@ ul {
 }
 
 @media (min-width: 82.5em) {
-  .women-container {
-    width: 80vw;
+  .women-container, .summit-container {
+    width: 90vw;
     margin: auto;
   }
 }
 
-.cards {
+.news-container {
+  background-color: #00B692;
+}
+
+.cards, .news {
   padding: 2em;
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  padding: .5em;
 }
 
 .value-item {
@@ -119,8 +127,15 @@ ul {
 }
 
 .item-title, .post {
-  margin: 1em 0 .5em 0;
   padding: 0 0 0 1em;
+}
+
+.item-title {
+  margin: 1em 0 .5em 0;
+}
+
+.post {
+ margin: 1em 0 3em 0;
 }
 
 .item-description {
@@ -420,7 +435,7 @@ ul {
   grid-column: 2 / 12;
 }
 
-.summit {
+.summit-img-container {
   grid-column: 1 /13;
 }
 
@@ -452,16 +467,15 @@ ul {
 }
 
 @media (min-width: 25em) {
-  .summit-container {
+  .span-container {
     grid-auto-flow: dense;
-    margin-bottom: 3em;
   }
   
   .summit-title {
-    grid-column: 2 / 12;
+    grid-column: 2 / 11;
   }
 
-  .summit {
+  .summit-img-container {
     grid-column: span 5 / 13;
     width: 90%;
   }
@@ -474,7 +488,6 @@ ul {
   .description {
     grid-column: 1 / span 6;
     padding-top: 0;
-    width: 45vw;
     margin-left: 2em;
   }
 
@@ -491,7 +504,7 @@ ul {
 }
 
 @media (min-width: 62em) and (orientation: portrait) {
-  .summit {
+  .summit-img-container {
     grid-column: span 6 / 13;
   }
   
@@ -524,30 +537,52 @@ ul {
     margin: 0 0 2em 0;
   }
 
-  .summit {
-    grid-column: span 5 / 12;  
+  .summit-img-container {
+    grid-column: span 5 / 12; 
+    margin-left: 3em;
   }
 }
 
 @media (min-width: 80.2em) {
+  .summit-container .span-container {
+    margin-bottom: 2em;
+  }
+  
   .summit-title {
-    grid-column: 4 / 9;
+    grid-column: 2 / 9;
     margin-bottom: 1em;
   }
 
-  .summit {
+  .summit-img-container{
     grid-column: span 4 / 11;
+        /* grid-column: 7 / span 5;
+    width: 34vw;
+    padding: 0em 1em 0em 3em;
+    margin-top: 0;  */
   }
 
   .summit-img {
     background-size: cover;
-    margin-left: 8em;
+    margin-left: 0;
   }
-  
+
   .description {
-    grid-column: 2 / span 4;
+    grid-column: 2 / 7;
     width: 36vw;
   }
+}
+
+/* news */
+.news-container .title {
+  padding-top: 2em;
+}
+
+.media {
+  margin: 1em 0 0 0;
+}
+
+.date {
+  margin: .2em 0 0 0;
 }
 
 .cover {
