@@ -14,7 +14,7 @@ h1, h2, h3, h4 {
   font-family: 'Raleway', sans-serif;
   letter-spacing: .15em;
   text-transform: uppercase;
-  line-height: calc(1.2em + 1vw);
+  line-height: calc(1.2em + 2vw);
   font-weight: 600;
 }
 
@@ -287,6 +287,11 @@ ul {
     grid-column: 6 / span 9; 
   }
 
+   .quote-text {
+    font-size: calc(26px + 0.2vw);
+    line-height: calc(1.5em + 0.5vw);
+  }
+
   .quote-container {
     margin: 3em 1em 3em 2em;
   }
@@ -349,6 +354,10 @@ ul {
     margin: 0;
   }
 
+  .bio p:first-child {
+    margin-bottom: 2em;
+  }
+
   .quote {
     grid-column: 6 / span 8; 
   }
@@ -360,12 +369,6 @@ ul {
   .quote-text p {
     margin: 0 0 0 2em;
   }
-
-  .quote-text {
-    font-size: calc(26px + 0.2vw);
-    line-height: calc(1.5em + 0.5vw);
-  }
-
 
 }
 
@@ -415,7 +418,6 @@ ul {
 
 .summit-title {
   grid-column: 2 / 12;
-  background-color: #5390F4;
 }
 
 .summit {
@@ -433,15 +435,15 @@ ul {
 
 .description {
   grid-column: 1 / 13;
-  background-color: thistle;
   padding: 1em;
+  margin-bottom: 3em;
 }
 
 .description p {
-  background-color: #20E9B7;
+  margin-bottom: 1em;
 }
 
-.description a {
+.button {
   background-color: #5390F4;
   display: inline-block;
   border: 1px solid #5390F4;
@@ -452,14 +454,16 @@ ul {
 @media (min-width: 25em) {
   .summit-container {
     grid-auto-flow: dense;
+    margin-bottom: 3em;
   }
   
   .summit-title {
-    grid-column: 4 / 9;
+    grid-column: 2 / 12;
   }
 
   .summit {
-    grid-column: span 7 / 13;
+    grid-column: span 5 / 13;
+    width: 90%;
   }
 
   .summit-img {
@@ -468,35 +472,81 @@ ul {
   }
 
   .description {
-    grid-column: 2 / span 4;
+    grid-column: 1 / span 6;
+    padding-top: 0;
+    width: 45vw;
+    margin-left: 2em;
+  }
+
+  .description p {
+    margin: 0 0 1em 0;
+  }
+}
+
+@media (min-width: 25em) and (orientation: portrait) {
+  .description {
+    margin-right: 0;
+    padding-right: 0;
   }
 }
 
 @media (min-width: 62em) and (orientation: portrait) {
+  .summit {
+    grid-column: span 6 / 13;
+  }
+  
   .summit-img {
     background-size: cover;
     margin-left: 2em;
     aspect-ratio: 4 / 3;
-    height: 100%;
+    height: 95%;
+  }
+
+  .description p {
+    padding-right: 1em;
   }
 }
 
 @media (min-width: 62em) and (orientation: landscape) {
   .summit-img {
-    background-size: cover;
-    margin-left: 9em;
+    background-size: contain;
+    margin-left: 3em;
     aspect-ratio: 4 / 3;
     height: 100%;
+  }
+
+  .description {
+    width: 46vw;
+    grid-column: 1 / span 4;
+  }
+
+  .description p {
+    margin: 0 0 2em 0;
+  }
+
+  .summit {
+    grid-column: span 5 / 12;  
   }
 }
 
 @media (min-width: 80.2em) {
+  .summit-title {
+    grid-column: 4 / 9;
+    margin-bottom: 1em;
+  }
+
   .summit {
-    grid-column: span 6 / 12;
+    grid-column: span 4 / 11;
+  }
+
+  .summit-img {
+    background-size: cover;
+    margin-left: 8em;
   }
   
   .description {
     grid-column: 2 / span 4;
+    width: 36vw;
   }
 }
 
