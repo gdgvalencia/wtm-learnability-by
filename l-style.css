@@ -478,16 +478,17 @@ ul {
   .summit-img-container {
     grid-column: span 5 / 13;
     width: 90%;
+    padding-bottom: 5em;
   }
 
   .summit-img {
-    height: 80%;
-    background-size: contain;
+    height: 100%;
+    background-size: cover;
+    border-radius: 50%;
   }
 
   .description {
     grid-column: 1 / span 6;
-    padding-top: 0;
     margin-left: 2em;
   }
 
@@ -511,8 +512,6 @@ ul {
   .summit-img {
     background-size: cover;
     margin-left: 2em;
-    aspect-ratio: 4 / 3;
-    height: 95%;
   }
 
   .description p {
@@ -522,9 +521,7 @@ ul {
 
 @media (min-width: 62em) and (orientation: landscape) {
   .summit-img {
-    background-size: contain;
     margin-left: 3em;
-    aspect-ratio: 4 / 3;
     height: 100%;
   }
 
@@ -539,7 +536,6 @@ ul {
 
   .summit-img-container {
     grid-column: span 5 / 12; 
-    margin-left: 3em;
   }
 }
 
@@ -554,11 +550,7 @@ ul {
   }
 
   .summit-img-container{
-    grid-column: span 4 / 11;
-        /* grid-column: 7 / span 5;
-    width: 34vw;
-    padding: 0em 1em 0em 3em;
-    margin-top: 0;  */
+    grid-column: span 4 / 12;
   }
 
   .summit-img {
@@ -567,7 +559,7 @@ ul {
   }
 
   .description {
-    grid-column: 2 / 7;
+    grid-column: 1 / 7;
     width: 36vw;
   }
 }
