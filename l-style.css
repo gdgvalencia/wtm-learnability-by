@@ -314,7 +314,6 @@ header {
 
 }
 
-
 @media only screen and (min-width: 64em) and (orientation: landscape) {
   .hero-container {
     height: 100vh;
@@ -366,7 +365,7 @@ header {
 
 @media only screen and (min-width: 90em) {
   .hero-container {
-    height: 100vh;
+    height: 90vh;
   }
 
   .big-big-green {
@@ -388,7 +387,37 @@ header {
   }
 }
 
+@media only screen and (min-width: 120em) {
+  .hero-container {
+    height: 90vh;
+  }
 
+  .big-green {
+    height: 24vh;
+  }
+
+  .big-big-blue {
+    height: 27vh;
+    top: 28vw;
+  }
+  .small-blue {
+    top: 27vw;
+  }
+  .logo {
+    top: 9vw;
+  }
+
+  .medium-green {
+    width: 5vw;
+    top: 36vw;
+  }
+
+  .medium-blue {
+    top: 33vw;
+    width: 6vw;
+  }
+
+}
 
 .statement {
   width: 90vw;
@@ -403,6 +432,12 @@ header {
 @media only screen and (min-width: 90em) {
   .statement {
     width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 120em) {
+  .statement {
+    width: 50vw;
   }
 }
 
@@ -1029,6 +1064,15 @@ header {
 @media only screen and (min-width: 80.2em) {
   .footer-container {
     width: 80vh;
+  }
+}
+
+
+@media only screen and (min-width: 90em) {
+  .footer-container {
+    place-items: center;
+    width: 70vw;
+    padding-top: 2em;
   }
 }
 
