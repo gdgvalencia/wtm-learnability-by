@@ -15,7 +15,7 @@ h1, h2, h3, h4 {
   letter-spacing: .15em;
   text-transform: uppercase;
   line-height: calc(1.2em + 2vw);
-  font-weight: 600;
+  font-weight: 800;
 }
 
 ul {
@@ -32,14 +32,6 @@ ul {
   overflow: hidden;
 }
 
-.hero-container {
-  background-color: #A7A5A5;
-  width: 100vw;
-  height: 80vh;
-  margin-top: 5rem;
-  overflow: hidden;
-}
-
 .nav-container {
   width: 90vw;
   position: absolute;
@@ -48,10 +40,85 @@ ul {
   height: 10vh;
 }
 
-.statement {
+.hero-container {
   width: 100vw;
-  height: 20vh;
-  background: #20E9B7;
+  height: 90vh;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.circle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.big-green {
+  background-image: url("images/circles/big-green.svg");
+  width: 100px;
+  height: 100px;
+}
+
+.small-green {
+  background-image: url("images/circles/small-green.svg");
+  width: 100px;
+  height: 100px;
+  
+}
+
+.big-big-green {
+  background-image: url("images/circles/big-big-green.svg");
+  width: 100px;
+  height: 100px;
+}
+
+.logo {
+  background-image: url("images/logo.svg");
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.big-big-blue {
+  background-image: url("images/circles/big-big-blue.svg");
+  width: 100px;
+  height: 100px;
+}
+
+.small-blue {
+  background-image: url("images/circles/small-blue.svg");
+  width: 100px;
+  height: 100px;
+}
+
+.medium-green {
+  background-image: url("images/circles/medium-green.svg");
+  width: 100px;
+  height: 100px;
+}
+
+.medium-blue {
+  background-image: url("images/circles/medium-blue.svg");
+  width: 100px;
+  height: 100px;
+}
+
+
+.statement {
+  width: 90vw;
+  margin: auto;
+  text-align: center;
+  padding: 2em 0;
+  background-color: #c8c8c83b;
+  box-shadow: 1px 11px 21px 0px #88888852;
+}
+
+.statement p {
+  padding: 0 1em;
 }
 
 .title {
@@ -63,6 +130,7 @@ ul {
   margin: auto;
   overflow: hidden;
 }
+
 
 .full-container .values {
   background-color: #f5f4ef;
@@ -109,8 +177,17 @@ ul {
   background-color: #00B692;
 }
 
+/* values */
+.values .title {
+  margin-top: 4em;
+}
+
+.values .title h1 {
+  margin-bottom: 0.4em;
+}
+
 .cards, .news {
-  padding: 2em;
+  padding: 0.5em 2em;
 }
 
 .card {
@@ -135,8 +212,12 @@ ul {
 }
 
 .post {
- margin: 1em 0 3em 0;
+ margin: 1em 0 2em 0;
 }
+
+.news-item-title {
+  font-weight: 600;
+} 
 
 .item-description {
   padding: .5em .8em;
@@ -250,14 +331,14 @@ ul {
 }
 
 .legendary {
-/* grid-column: 2/ 2; */
-  background-image: url("images/Ellipse\ 6.svg");
+  background-image: url("images/marie-curie.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   mix-blend-mode: overlay;
   height: 170px;
   width: 900px;
+  border-radius: 50%;
 }
 
 @media (min-width: 25em) {
@@ -450,7 +531,7 @@ ul {
 
 .description {
   grid-column: 1 / 13;
-  padding: 1em;
+  padding: 1em 2em;
   margin-bottom: 3em;
 }
 
@@ -630,15 +711,10 @@ ul {
   }
 }
 
-footer {
-  border-top: 1px solid #fff;
-  padding-top: 2em;
-  width: 90%;
-  margin: auto;
-}
-
 .footer-container {
   place-items: center;
+  width: 90vw;
+  padding-top: 2em;
 }
 
 .sm-logo {
@@ -649,7 +725,24 @@ footer {
   height: 15vh;
 }
 
+.about, .organizers, .follow  {
+  padding: 0 1em;
+}
 
+.follow {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.organizers h4, .follow h4 {
+  margin-bottom: 0;
+}
+
+@media (min-width: 80.2em) {
+  .footer-container {
+    width: 80vh;
+  }
+}
 
 /* Menu styles */
 #menu {
