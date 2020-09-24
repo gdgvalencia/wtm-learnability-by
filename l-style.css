@@ -940,6 +940,11 @@ header {
   .description {
     margin-right: 0;
     padding-right: 0;
+    grid-column: 1 / span 11;
+  }
+
+  .summit-img-container {
+    display: none;
   }
 }
 
