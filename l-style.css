@@ -72,7 +72,6 @@ header {
   height: 18px;
   top: 60px;
   left: 208px;
-  
 }
 
 .big-big-green {
@@ -129,6 +128,50 @@ header {
   left: 289px;
 }
 
+@media (min-width: 25em) and (orientation: landscape) {
+  .hero-container {
+    height: 90vh;
+  }
+
+  .big-green {
+    left: 56px;
+  }
+
+  .small-green {
+    left: 608px;
+  }
+
+  .big-big-green {
+    left: 661px;
+  }
+
+  .logo {
+    width: 352px;
+    height: 267px;
+    top: 28px;
+    left: 236px;
+  }
+
+  .big-big-blue {
+    top: 217px;
+    left: 64px;
+  }
+
+  .small-blue {
+    top: 201px;
+    left: 160px;
+  }
+
+  .medium-green {
+    top: 233px;
+    left: 490px;
+  }
+
+  .medium-blue {
+    top: 234px;
+    left: 642px;
+  }
+}
 
 .statement {
   width: 90vw;
