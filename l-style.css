@@ -84,11 +84,11 @@ header {
 }
 
 .logo {
-  background-image: url("images/logo.svg");
+  background-image: url("images/logo-fondo-oscuro.svg");
   background-size: contain;
   width: 316px;
   height: 300px;
-  top: 12vw;
+  top: 9vw;
   left: 8vw;
 }
 
@@ -194,9 +194,9 @@ header {
   }
 
   .logo {
-    width: 78vw;
-    top: 12vw;
-    left: 12vw;
+    width: 71vw;
+    top: 6vw;
+    left: 16vw;
   }
 
   .big-big-blue {
@@ -220,7 +220,7 @@ header {
 
 @media (min-width: 48em) and (orientation: landscape) {
   .hero-container {
-    height: 100vh;
+    height: 74vh;
   }
 
    .big-green {
