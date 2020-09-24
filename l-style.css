@@ -129,6 +129,10 @@ header {
 }
 
 @media only screen and (min-width: 25em) and (orientation: portrait) { 
+  .line-up-container {
+    display: table-cell;
+  }
+  
   .hero-container {
     height: 60vh;
   }
@@ -144,7 +148,7 @@ header {
   }
 
   .big-big-green {
-    left: 85vw;
+    left: 62vw;
   }
 
   .logo {
@@ -164,14 +168,16 @@ header {
   }
 
   .medium-green {
-    top: 30vw;
-    left: 490px;
+    top: 54vw;
+    left: 53vw;
   }
 
   .medium-blue {
     top: 26vw;
     left: 83vw;
   }
+
+ 
 }
 
 @media only screen and (min-width: 25em) and (orientation: landscape) { 
@@ -339,7 +345,7 @@ header {
   .big-big-blue {
     width: 16vw;
     height: 17vh;
-    top: 47vw;
+    top: 44vw;
   }
 
   .small-blue {
@@ -387,7 +393,7 @@ header {
   }
 }
 
-@media only screen and (min-width: 120em) {
+@media only screen and (min-width: 110em) {
   .hero-container {
     height: 90vh;
   }
@@ -400,6 +406,7 @@ header {
     height: 27vh;
     top: 28vw;
   }
+  
   .small-blue {
     top: 27vw;
   }
@@ -482,6 +489,16 @@ header {
     display: grid;
     grid-gap: 3rem;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 25em) and (orientation: portrait) { 
+  .main-container {
+    display: table-caption;
+  }
+
+  .line-up-container {
+    display: table-cell;
   }
 }
 
@@ -717,8 +734,26 @@ header {
 }
 
 @media only screen and (min-width: 25em) and (orientation: portrait) {
-  .portrait {
-    height: 86px;
+  .intro {
+    grid-column: 2 /10;
+  }
+
+  .portrait-container {
+    grid-column: 1 / 2;
+    grid-row: 3 / 3;
+  }
+
+  .bio {
+    grid-column: 1/ 12;
+    width: 80vw;
+  }
+
+  .quote-container {
+    margin: 0em 1em 3em 3em;
+  }
+
+  .quote {
+    grid-column: 1 / span 11;
   }
 }
 
