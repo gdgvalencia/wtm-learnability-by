@@ -128,7 +128,7 @@ header {
   left: 80vw;
 }
 
-@media (min-width: 25em) and (orientation: landscape) {
+/* @media (min-width: 25em) and (orientation: landscape) {
   .hero-container {
     height: 90vh;
   }
@@ -171,6 +171,94 @@ header {
   .medium-blue {
     top: 26vw;
     left: 83vw;
+  }
+} */
+
+@media (min-width: 48em) and (orientation: portrait) {
+  .hero-container {
+    height: 52vh;
+  }
+
+  .big-green {
+    left: 3vw;
+    top: 1vw
+  }
+
+  .small-green {
+    top: 13vw;
+    left: 78vw;
+  }
+
+  .big-big-green {
+    left: 82vw;
+  }
+
+  .logo {
+    width: 78vw;
+    top: 12vw;
+    left: 12vw;
+  }
+
+  .big-big-blue {
+    top: 42vw;
+  }
+
+  .small-blue {
+    top: 34vw;
+    left: 18vw;
+  }
+
+  .medium-green {
+    top: 48vw;
+    left: 64vw;
+  }
+
+  .medium-blue {
+    top: 47vw;
+  }
+}
+
+@media (min-width: 48em) and (orientation: landscape) {
+  .hero-container {
+    height: 100vh;
+  }
+
+   .big-green {
+    left: 3vw;
+    top: 1vw
+  }
+
+  .small-green {
+    top: 13vw;
+    left: 83vw;
+  }
+
+  .big-big-green {
+    left: 85vw;
+  }
+
+  .logo {
+    width: 78vw;
+    top: 10vw;
+    left: 12vw;
+  }
+
+  .big-big-blue {
+    top: 39vw;
+  }
+
+  .small-blue {
+    top: 34vw;
+    left: 18vw;
+  }
+
+  .medium-green {
+    top: 41vw;
+    left: 64vw;
+  }
+
+  .medium-blue {
+    top: 36vw;
   }
 }
 
@@ -829,6 +917,12 @@ header {
 @media (min-width: 25em) and (orientation: landscape) {
   #menu {
     height: 71vh;
+  }
+}
+
+@media (min-width: 48em) and (orientation: landscape) {
+  #menu {
+    height: 100vh;
   }
 }
 
