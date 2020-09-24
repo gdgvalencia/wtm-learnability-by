@@ -128,7 +128,53 @@ header {
   left: 80vw;
 }
 
-/* @media (min-width: 25em) and (orientation: landscape) {
+@media only screen and (min-width: 25em) and (orientation: portrait) { 
+  .hero-container {
+    height: 60vh;
+  }
+
+  .big-green {
+    left: 3vw;
+    top: 1vw
+  }
+
+  .small-green {
+    top: 13vw;
+    left: 83vw;
+  }
+
+  .big-big-green {
+    left: 85vw;
+  }
+
+  .logo {
+    width: 66vw;
+    top: 2vw;
+    left: 19vw;
+  }
+
+  .big-big-blue {
+    top: 22vw;
+    left: 8vw;
+  }
+
+  .small-blue {
+    top: 26vw;
+    left: 20vw;
+  }
+
+  .medium-green {
+    top: 30vw;
+    left: 490px;
+  }
+
+  .medium-blue {
+    top: 26vw;
+    left: 83vw;
+  }
+}
+
+@media only screen and (min-width: 25em) and (orientation: landscape) { 
   .hero-container {
     height: 90vh;
   }
@@ -172,9 +218,9 @@ header {
     top: 26vw;
     left: 83vw;
   }
-} */
+}
 
-@media (min-width: 48em) and (orientation: portrait) {
+@media only screen and (min-width: 47em) and (orientation: portrait) {
   .hero-container {
     height: 52vh;
   }
@@ -218,49 +264,131 @@ header {
   }
 }
 
-@media (min-width: 48em) and (orientation: landscape) {
+@media only screen and (min-width: 50em) and (orientation: landscape) {
+   .hero-container {
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 64em) and (orientation: portrait) {
   .hero-container {
-    height: 74vh;
-  }
-
-   .big-green {
-    left: 3vw;
-    top: 1vw
-  }
-
-  .small-green {
-    top: 13vw;
-    left: 83vw;
-  }
-
-  .big-big-green {
-    left: 85vw;
+    height: 64vh;
   }
 
   .logo {
-    width: 78vw;
-    top: 10vw;
-    left: 12vw;
+    top: 16vw;
+  }
+
+  .big-green {
+    background-size: cover; 
+    width: 12vw;
+    left: 4vw;
+  }
+
+  .big-big-green {
+    background-size: cover;
+    width: 13vw;
   }
 
   .big-big-blue {
-    top: 39vw;
+    width: 16vw;
+    height: 15vh;
+    top: 54vw;
   }
 
   .small-blue {
-    top: 34vw;
-    left: 18vw;
+    top: 48vw;
+    left: 24vw;
   }
 
   .medium-green {
-    top: 41vw;
-    left: 64vw;
+    top: 53vw;
+    left: 55vw;
+    width: 11vw;
   }
 
   .medium-blue {
-    top: 36vw;
+    width: 10vw;
+    top: 47vw;
+  }
+
+}
+
+
+@media only screen and (min-width: 64em) and (orientation: landscape) {
+  .hero-container {
+    height: 100vh;
+  }
+
+  .logo {
+    top: 12vw;
+  }
+
+  .big-green {
+    background-size: cover; 
+    width: 12vw;
+    height: 17vh;
+    left: 4vw;
+  }
+
+  .big-big-green {
+    background-size: cover;
+    width: 13vw;
+    height: 15vh;
+  }
+
+  .big-big-blue {
+    width: 16vw;
+    height: 17vh;
+    top: 47vw;
+  }
+
+  .small-blue {
+    top: 42vw;
+    left: 22vw;
+  }
+
+  .medium-green {
+    top: 48vw;
+    left: 55vw;
+  }
+
+  .medium-blue {
+    top: 40vw;
   }
 }
+
+@media only screen and (min-width: 83em) and (orientation: landscape) {
+ .hero-container {
+    height: 83vh;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .hero-container {
+    height: 100vh;
+  }
+
+  .big-big-green {
+    height: 19vh;
+  }
+
+  .big-big-blue {
+    height: 25vh;
+    top: 34vw;
+  }
+
+  .small-blue {
+    top: 33vw;   
+  }
+
+  .medium-green {
+    top: 38vw;
+    left: 55vw;
+  }
+}
+
+
 
 .statement {
   width: 90vw;
@@ -270,6 +398,12 @@ header {
   padding: 2em 0;
   background-color: #c8c8c83b;
   box-shadow: 1px 11px 21px 0px #88888852;
+}
+
+@media only screen and (min-width: 90em) {
+  .statement {
+    width: 70vw;
+  }
 }
 
 .statement p {
@@ -301,14 +435,14 @@ header {
   margin: auto;
 }
 
-@media (min-width: 82.5em) {
+@media only screen and (min-width: 82.5em) {
   .line-up-container.news {
     width: 80vw;
     margin: auto;
   }
 }
 
-@media (min-width: 25em) {
+@media only screen and (min-width: 25em) {
   .line-up-container {
     display: grid;
     grid-gap: 3rem;
@@ -320,7 +454,7 @@ header {
   margin-top: 2em;
 }
 
-@media (min-width: 82.5em) {
+@media only screen and (min-width: 82.5em) {
   .women-container, .summit-container {
     width: 90vw;
     margin: auto;
@@ -384,7 +518,7 @@ header {
   margin-left: .5em;
 }
 
-@media (min-width: 25em)  {
+@media only screen and (min-width: 25em)  {
   .line-up-container {
     grid-gap: 1rem;
   }
@@ -398,7 +532,7 @@ header {
   }
 }
 
-@media (min-width: 62em) {
+@media only screen and (min-width: 62em) {
   .line-up-container {
     grid-gap: 3rem;
   }
@@ -408,7 +542,7 @@ header {
   }
 }
 
-@media (min-width: 82.5em) {
+@media only screen and (min-width: 82.5em) {
   .full-container.values {
     width: 80vw;
   }
@@ -495,7 +629,7 @@ header {
   border-radius: 50%;
 }
 
-@media (min-width: 25em) {
+@media only screen and (min-width: 25em) {
   .intro-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -547,13 +681,13 @@ header {
   }
 }
 
-@media (min-width: 25em) and (orientation: portrait) {
+@media only screen and (min-width: 25em) and (orientation: portrait) {
   .portrait {
     height: 86px;
   }
 }
 
-@media (min-width: 25em) and (orientation: landscape) {
+@media only screen and (min-width: 25em) and (orientation: landscape) {
    .portrait {
     height: 94px;
   }
@@ -563,7 +697,7 @@ header {
   }
 }
 
-@media (min-width: 62em) {
+@media only screen and (min-width: 62em) {
   .portrait-container {
     grid-row: 1 / 2;
     margin-top: 1em;
@@ -622,7 +756,7 @@ header {
 
 }
 
-@media (min-width: 62em) and (orientation: landscape) {
+@media only screen and (min-width: 62em) and (orientation: landscape) {
   .portrait {
       margin-left: 2em;
   }
@@ -637,7 +771,7 @@ header {
   }
 }
 
-@media (min-width: 62em) and (orientation: portrait) {
+@media only screen and (min-width: 62em) and (orientation: portrait) {
   .legendary {
     background-size: cover;
     height: 250px;
@@ -645,7 +779,7 @@ header {
   }
 }
 
-@media (min-width: 82.5em) {
+@media only screen and (min-width: 82.5em) {
   .intro {
     grid-column: 3 / 10;
   }
@@ -701,7 +835,7 @@ header {
   border-radius: 30px;
 }
 
-@media (min-width: 25em) {
+@media only screen and (min-width: 25em) {
   .span-container {
     grid-auto-flow: dense;
   }
@@ -732,14 +866,14 @@ header {
   }
 }
 
-@media (min-width: 25em) and (orientation: portrait) {
+@media only screen and (min-width: 25em) and (orientation: portrait) {
   .description {
     margin-right: 0;
     padding-right: 0;
   }
 }
 
-@media (min-width: 62em) and (orientation: portrait) {
+@media only screen and (min-width: 62em) and (orientation: portrait) {
   .summit-img-container {
     grid-column: span 6 / 13;
   }
@@ -754,7 +888,7 @@ header {
   }
 }
 
-@media (min-width: 62em) and (orientation: landscape) {
+@media only screen and (min-width: 62em) and (orientation: landscape) {
   .summit-img {
     margin-left: 3em;
     height: 100%;
@@ -774,7 +908,7 @@ header {
   }
 }
 
-@media (min-width: 80.2em) {
+@media only screen and (min-width: 80.2em) {
   .summit-container .span-container {
     margin-bottom: 2em;
   }
@@ -833,33 +967,33 @@ header {
  background-image: url("images/vplaza-2.jpg");
 }
 
-@media (min-width: 25em) and (orientation: landscape) {
+@media only screen and (min-width: 25em) and (orientation: landscape) {
   .cover {
     height: 40vh;
   }
 }
 
-@media (min-width: 25em) and (orientation: portrait) {
+@media only screen and (min-width: 25em) and (orientation: portrait) {
   .cover {
     height: 15vh;
   }
 }
 
-@media (min-width: 62em) and (orientation: portrait){
+@media only screen and (min-width: 62em) and (orientation: portrait){
   .cover {
     background-size: contain;
     height: 15vh;
   }
 }
 
-@media (min-width: 62em) and (orientation: landscape){
+@media only screen and (min-width: 62em) and (orientation: landscape){
   .cover {
     background-size: contain;
     height: 25vh;
   }
 }
 
-@media (min-width: 80.2em) {
+@media only screen and (min-width: 80.2em) {
   .cover {
     background-size: cover;
   }
@@ -892,7 +1026,7 @@ header {
   margin-bottom: 0;
 }
 
-@media (min-width: 80.2em) {
+@media only screen and (min-width: 80.2em) {
   .footer-container {
     width: 80vh;
   }
@@ -914,13 +1048,13 @@ header {
   /* transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); */
 }
 
-@media (min-width: 25em) and (orientation: landscape) {
+@media only screen and (min-width: 25em) and (orientation: landscape) {
   #menu {
     height: 71vh;
   }
 }
 
-@media (min-width: 48em) and (orientation: landscape) {
+@media only screen and (min-width: 48em) and (orientation: landscape) {
   #menu {
     height: 100vh;
   }
