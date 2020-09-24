@@ -24,7 +24,6 @@ ul {
   padding: 0;
 }
 
-
 .main-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -32,85 +31,109 @@ ul {
   overflow: hidden;
 }
 
+header {
+  background-color: #1B2D45;
+  mix-blend-mode: multiply;
+}
+
 .nav-container {
   width: 90vw;
-  position: absolute;
-  top: 0;
-  background: #20E9B7;
-  height: 10vh;
+  height: 8vh;
 }
 
 .hero-container {
   width: 100vw;
-  height: 90vh;
-  margin-top: 5rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  height: 60vh;
 }
 
-.circle {
-  background-size: cover;
+.hero {
+  position: relative;
+}
+
+.circle, .logo {
+  position: absolute;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .big-green {
   background-image: url("images/circles/big-green.svg");
-  width: 100px;
+  background-size: contain;
+  width: 80px;
   height: 100px;
+  top: 26px;
+  left: 6px;
 }
 
 .small-green {
   background-image: url("images/circles/small-green.svg");
-  width: 100px;
-  height: 100px;
+  background-size: contain;
+  width: 35px;
+  height: 18px;
+  top: 60px;
+  left: 208px;
   
 }
 
 .big-big-green {
   background-image: url("images/circles/big-big-green.svg");
-  width: 100px;
+  background-size: contain;
+  width: 88px;
   height: 100px;
+  top: 0px;
+  left: 261px;
 }
 
 .logo {
   background-image: url("images/logo.svg");
-  width: 100%;
-  height: 100%;
   background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 316px;
+  height: 300px;
+  top: 46px;
+  left: 32px;
 }
 
 .big-big-blue {
   background-image: url("images/circles/big-big-blue.svg");
-  width: 100px;
+  background-size: cover;
+  width: 96px;
   height: 100px;
+  top: 253px;
+  left: 16px;
 }
 
 .small-blue {
   background-image: url("images/circles/small-blue.svg");
-  width: 100px;
+  background-size: contain;
+  width: 23px;
   height: 100px;
+  top: 258px;
+  left: 115px;
 }
 
 .medium-green {
   background-image: url("images/circles/medium-green.svg");
-  width: 100px;
+  background-size: contain;
+  width: 50px;
   height: 100px;
+  top: 272px;
+  left: 190px;
 }
 
 .medium-blue {
   background-image: url("images/circles/medium-blue.svg");
-  width: 100px;
+  background-size: contain;
+  width: 60px;
   height: 100px;
+  top: 256px;
+  left: 289px;
 }
 
 
 .statement {
   width: 90vw;
   margin: auto;
+  margin-top: 2em;
   text-align: center;
   padding: 2em 0;
   background-color: #c8c8c83b;
@@ -130,7 +153,6 @@ ul {
   margin: auto;
   overflow: hidden;
 }
-
 
 .full-container .values {
   background-color: #f5f4ef;
@@ -747,13 +769,13 @@ ul {
 /* Menu styles */
 #menu {
   position: absolute;
-  width: 280px;
-  height: 400px;
-  box-shadow: 0 0 10px #A7A5A5;
+  width: 295px;
+  height: 55vh;
+  box-shadow: 0 0 10px #575859;
   margin: -50px 0 0 -50px;
   padding: 50px;
   padding-top: 75px;
-  background-color: #f5f4ef;
+  background-color: #1B2D45;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
