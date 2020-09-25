@@ -152,54 +152,54 @@ header {
   }
 
   .big-green {
-    left: 3vw;
-    top: 1vw
+    left: 4vw;
+    top: 8vw;
   }
 
   .small-green {
-    top: 13vw;
-    left: 83vw;
+    top: 23vw;
+    left: 59vw;
   }
 
   .big-big-green {
-    left: 62vw;
+    left: 72vw;
   }
 
   .logo {
-    width: 66vw;
-    top: 2vw;
-    left: 19vw;
+    width: 83vw;
+    top: 18vw;
+    left: 11vw;
   }
 
   .big-big-blue {
-    top: 64vw;
+    top: 87vw;
     left: 8vw;
   }
 
   .small-blue {
-    top: 53vw;
+    top: 76vw;
     left: 30vw;
   }
 
   .medium-green {
-    top: 54vw;
+    top: 72vw;
     left: 53vw;
   }
 
   .medium-blue {
-    top: 62vw;
+    top: 86vw;
     left: 78vw;
   }
 }
 
 @media only screen and (min-width: 25em) and (orientation: landscape) { 
-  .hero-container {
+   .hero-container {
     height: 90vh;
   }
 
   .big-green {
     left: 3vw;
-    top: 1vw
+    top: 3vw;
   }
 
   .small-green {
@@ -218,23 +218,23 @@ header {
   }
 
   .big-big-blue {
-    top: 22vw;
-    left: 8vw;
+    top: 34vw;
+    left: 5vw;
   }
 
   .small-blue {
     top: 26vw;
-    left: 20vw;
+    left: 17vw;
   }
 
   .medium-green {
-    top: 30vw;
-    left: 490px;
+    top: 37vw;
+    left: 53vw;
   }
 
   .medium-blue {
-    top: 26vw;
-    left: 83vw;
+    top: 31vw;
+    left: 78vw;
   }
 }
 
@@ -448,6 +448,13 @@ header {
   box-shadow: 1px 11px 21px 0px #88888852;
 }
 
+@media only screen and (min-width: 25em) and (orientation: portrait) {
+  .statement {
+    margin: 2em 1em;
+    width: 90vw;
+  }
+}
+
 @media only screen and (min-width: 90em) {
   .statement {
     width: 70vw;
@@ -502,7 +509,12 @@ header {
     grid-gap: 3rem;
     grid-template-columns: repeat(3, 1fr);
   }
+} 
 
+@media only screen and (min-width: 25em) and (orientation: portrait) {
+  .line-up-container {
+    grid-template-columns: unset;
+  }
 } 
 
 .women-container {
@@ -584,6 +596,12 @@ header {
 
   .cards {
     padding: 1em;
+  }
+}
+
+@media only screen and (min-width: 25em) and (orientation: portrait) {
+  .cards {
+    padding: 2em;
   }
 }
 
@@ -736,9 +754,14 @@ header {
   }
 }
 
-/* @media only screen and (min-width: 25em) and (orientation: portrait) {
+@media only screen and (min-width: 25em) and (orientation: portrait) {
   .intro {
-    grid-column: 2 /10;
+    grid-column: 2 / 12;
+  }
+
+  .intro-box {
+    grid-column: 1 / 1;
+    grid-row: 1 / 3;
   }
 
   .portrait-container {
@@ -747,18 +770,14 @@ header {
   }
 
   .bio {
-    grid-column: 1/ 12;
-    width: 80vw;
-  }
-
-  .quote-container {
-    margin: 0em 1em 3em 3em;
+    grid-column: 1 / 12;
   }
 
   .quote {
-    grid-column: 1 / span 11;
+    grid-column: 2 / span 12;
   }
-} */
+
+}
 
 @media only screen and (min-width: 25em) and (orientation: landscape) {
    .portrait {
@@ -940,8 +959,27 @@ header {
 }
 
 @media only screen and (min-width: 25em) and (orientation: portrait) {
+  .summit-title {
+    grid-column: 2 / 12;
+  } 
+
+  .summit-img-container {
+    grid-column: 1 / 13;
+    height: 50vh;
+    padding-bottom: 0;
+    
+  }
+
+  .summit-img {
+    background-size: contain;
+    border-radius: 0;
+    width: 100vw;
+  }
+
   .description {
+    grid-column: 1 / 12;
     margin-right: 0;
+    margin-left: 0;
     padding-right: 0;
   }
 }
@@ -1040,6 +1078,12 @@ header {
  background-image: url("images/vplaza-2.jpg");
 }
 
+@media only screen and (min-width: 25em) and (orientation: portrait) {
+  .news-container .title {
+    padding: 2em 2em 0 2em;
+  }
+}
+
 @media only screen and (min-width: 25em) and (orientation: landscape) {
   .cover {
     height: 40vh;
@@ -1091,6 +1135,12 @@ header {
 
 .organizers h4, .follow h4 {
   margin-bottom: 0;
+}
+
+@media only screen and (min-width: 25em) and (orientation: portrait) {
+  .footer-container {
+    place-items: unset;
+  }
 }
 
 @media only screen and (min-width: 80.2em) {
