@@ -558,7 +558,7 @@ header {
   margin-bottom: 3em;
 }
 
-.item-title, .post {
+.item-title {
   padding: 0 0 0 1em;
 }
 
@@ -566,8 +566,8 @@ header {
   margin: 1em 0 .5em 0;
 }
 
-.post {
- margin: 1em 0 2em 0;
+.post h4 {
+  text-transform: none;
 }
 
 .news-item-title {
