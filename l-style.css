@@ -129,9 +129,9 @@ header {
 }
 
 @media only screen and (min-width: 25em) and (orientation: portrait) { 
-  .line-up-container {
+  /* .line-up-container {
     display: table-cell;
-  }
+  } */
   
   .hero-container {
     height: 60vh;
@@ -158,13 +158,13 @@ header {
   }
 
   .big-big-blue {
-    top: 22vw;
+    top: 64vw;
     left: 8vw;
   }
 
   .small-blue {
-    top: 26vw;
-    left: 20vw;
+    top: 53vw;
+    left: 30vw;
   }
 
   .medium-green {
@@ -173,11 +173,9 @@ header {
   }
 
   .medium-blue {
-    top: 26vw;
-    left: 83vw;
+    top: 62vw;
+    left: 78vw;
   }
-
- 
 }
 
 @media only screen and (min-width: 25em) and (orientation: landscape) { 
@@ -486,13 +484,18 @@ header {
 
 @media only screen and (min-width: 25em) {
   .line-up-container {
+    /* display: inline-block;
+    width: 78vw;
+    margin-left: 4em; */
     display: grid;
     grid-gap: 3rem;
     grid-template-columns: repeat(3, 1fr);
   }
-}
 
-@media only screen and (min-width: 25em) and (orientation: portrait) { 
+  
+} 
+
+/* @media only screen and (min-width: 25em) and (orientation: portrait) { 
   .main-container {
     display: table-caption;
   }
@@ -500,7 +503,18 @@ header {
   .line-up-container {
     display: table-cell;
   }
+} */
+
+@media only screen and (min-width: 47em) and (orientation: portrait) { 
+  .line-up-container {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100vw;
+    margin-left: 0;
+  }
 }
+
 
 .women-container {
   margin-top: 2em;
@@ -733,7 +747,7 @@ header {
   }
 }
 
-@media only screen and (min-width: 25em) and (orientation: portrait) {
+/* @media only screen and (min-width: 25em) and (orientation: portrait) {
   .intro {
     grid-column: 2 /10;
   }
@@ -755,7 +769,7 @@ header {
   .quote {
     grid-column: 1 / span 11;
   }
-}
+} */
 
 @media only screen and (min-width: 25em) and (orientation: landscape) {
    .portrait {
@@ -936,7 +950,7 @@ header {
   }
 }
 
-@media only screen and (min-width: 25em) and (orientation: portrait) {
+/* @media only screen and (min-width: 25em) and (orientation: portrait) {
   .description {
     margin-right: 0;
     padding-right: 0;
@@ -946,7 +960,7 @@ header {
   .summit-img-container {
     display: none;
   }
-}
+} */
 
 @media only screen and (min-width: 62em) and (orientation: portrait) {
   .summit-img-container {
@@ -1048,11 +1062,17 @@ header {
   }
 }
 
-@media only screen and (min-width: 25em) and (orientation: portrait) {
-  .cover {
-    height: 15vh;
+/* @media only screen and (min-width: 25em) and (orientation: portrait) {
+  .news-container .title {
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
   }
-}
+
+  .cover {
+    height: 25vh;
+  }
+} */
 
 @media only screen and (min-width: 62em) and (orientation: portrait){
   .cover {
