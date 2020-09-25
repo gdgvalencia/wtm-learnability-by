@@ -38,6 +38,7 @@ header {
 
 .header {
   background-color: #1B2D45;
+  height: 60px;
 }
 
 .nav-container {
@@ -1210,60 +1211,14 @@ a:hover {
   margin-top: 2em;
 }
 
-.vision {
-  width: 80vw;
-  margin: auto;
-  margin-bottom: 1em;
-  margin-left: 2em;
-  font-size: 24px;
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: .15em;
-  line-height: calc(1.2em + 2vw);
-  
-}
-
-.mision {
-  color: #5390F4;
-  margin: .5em 0;
-  font-size: 32px;
-  line-height: calc(1.2em + 2vw);
-  display: inline-block;
-  font-weight: 800;
-}
-
-.profiles {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.profiles h4 {
-  margin: 1em 0 0 0;
-  color: #5390F4;
-  font-weight: 600;
-}
-
-.profiles p {
-  margin: 0 0 1.5em 0 ;
-}
-
-.profile {
+.wtm19-hello {
+  background-image: url("images/us/todas.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 59vw;
-  height: 26vh;
-}
-
-
-.wtm19-hello {
-  background-image: url("images/us/todas.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   width: 100%;
-  height: 36vh;
+  height: 45vh;
+  margin-bottom: 2em;
   z-index: 2;
 }
 
@@ -1287,6 +1242,94 @@ a:hover {
   height: 19vh;
   top: 5vw;
   left: 82vw;
+}
+
+.vision {
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 1em;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: .15em;
+  line-height: calc(1.2em + 2vw);
+  
+}
+
+.mision {
+  color: #5390F4;
+  margin: .5em 0;
+  font-size: 32px;
+  line-height: calc(1.2em + 2vw);
+  display: inline-block;
+  font-weight: 800;
+}
+
+.us-profiles {
+  display: grid;
+  place-items: center;
+}
+
+.profiles h4 {
+  margin: 1em 0 0 0;
+  color: #5390F4;
+  font-weight: 600;
+}
+
+.profiles p {
+  margin: 0 0 1.5em 0 ;
+}
+
+.profile {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 75vw;
+  height: 35vh;
+}
+
+.profile-info {
+  width: 75vw;
+  text-align: center;
+}
+
+@media only screen and (min-width: 25em) and (orientation: landscape) {
+  .full-container .us-profiles {
+    /* width: 80vw; */
+  }
+  
+  .wtm19-hello {
+    height: 100vh;
+  }
+
+  .blue {
+    height: 18vh;
+    top: 17vw;
+    left: 11vw;
+  }
+
+  .vision {
+    width: 70vw;
+    padding: 1em 0;
+    margin: auto;
+  }
+
+  .us-profiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profiles {
+    height: 100vh;
+  }
+
+  .profile {
+   background-size: contain;
+    width: 40vw;
+    height: 60vh;
+  }
+
+  .profile-info {
+    width: 40vw;
+  }
 }
 
 @media only screen and (min-width: 64em) and (orientation: landscape) {
