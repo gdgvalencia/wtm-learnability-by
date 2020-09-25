@@ -1332,6 +1332,26 @@ a:hover {
   }
 }
 
+@media only screen and (min-width: 47em) and (orientation: portrait) {
+  .full-container .us-profiles {
+    width: 90vw;
+  }
+
+  .blue {
+    top: 16vw;
+  }
+  
+  .profile {
+    width: 28vw;
+    height: 15vh;
+  }
+
+   .profile-info {
+    width: 29vw;
+  }
+
+}
+
 @media only screen and (min-width: 64em) and (orientation: landscape) {
   .wtm19-hello {
     width: 100%;
