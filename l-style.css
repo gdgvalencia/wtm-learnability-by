@@ -129,10 +129,6 @@ header {
 }
 
 @media only screen and (min-width: 25em) and (orientation: portrait) { 
-  /* .line-up-container {
-    display: table-cell;
-  } */
-  
   .hero-container {
     height: 60vh;
   }
@@ -484,15 +480,11 @@ header {
 
 @media only screen and (min-width: 25em) {
   .line-up-container {
-    /* display: inline-block;
-    width: 78vw;
-    margin-left: 4em; */
     display: grid;
     grid-gap: 3rem;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  
 } 
 
 /* @media only screen and (min-width: 25em) and (orientation: portrait) { 
@@ -504,17 +496,6 @@ header {
     display: table-cell;
   }
 } */
-
-@media only screen and (min-width: 47em) and (orientation: portrait) { 
-  .line-up-container {
-    display: grid;
-    grid-gap: 3rem;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100vw;
-    margin-left: 0;
-  }
-}
-
 
 .women-container {
   margin-top: 2em;
@@ -784,7 +765,7 @@ header {
 @media only screen and (min-width: 62em) {
   .portrait-container {
     grid-row: 1 / 2;
-    margin-top: 1em;
+    margin-top: 2em;
   }
 
   .intro-container {
@@ -950,17 +931,12 @@ header {
   }
 }
 
-/* @media only screen and (min-width: 25em) and (orientation: portrait) {
+@media only screen and (min-width: 25em) and (orientation: portrait) {
   .description {
     margin-right: 0;
     padding-right: 0;
-    grid-column: 1 / span 11;
   }
-
-  .summit-img-container {
-    display: none;
-  }
-} */
+}
 
 @media only screen and (min-width: 62em) and (orientation: portrait) {
   .summit-img-container {
@@ -1074,14 +1050,14 @@ header {
   }
 } */
 
-@media only screen and (min-width: 62em) and (orientation: portrait){
+@media only screen and (min-width: 62em) and (orientation: portrait) {
   .cover {
     background-size: contain;
     height: 15vh;
   }
 }
 
-@media only screen and (min-width: 62em) and (orientation: landscape){
+@media only screen and (min-width: 62em) and (orientation: landscape) {
   .cover {
     background-size: contain;
     height: 25vh;
@@ -1123,15 +1099,15 @@ header {
 
 @media only screen and (min-width: 80.2em) {
   .footer-container {
-    width: 80vh;
+    width: 100vh;
+    place-items: center;
   }
 }
 
 
 @media only screen and (min-width: 90em) {
   .footer-container {
-    place-items: center;
-    width: 70vw;
+    width: 80vw;
     padding-top: 2em;
   }
 }
