@@ -1415,6 +1415,52 @@ a:hover {
   }
 }
 
+@media only screen and (min-width: 90em) {
+   .wtm19-hello {
+    background-size: contain;
+  }
+  
+  .vision {
+    width: 50vw;
+    padding: 0;
+  }
+
+  .mision {
+    margin: .2em 0 1.2em 0
+  }
+
+  .profiles {
+    height: 50vh;
+  }
+
+  .profile, .profile-info {
+    width: 30vw;
+  }
+
+  .profile {
+    background-size: contain;
+  }
+
+  .us-profiles {
+     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 105em) {
+  .full-container .us-profiles {
+    width: 80vw;
+    margin-bottom: 4em;
+  }
+
+  .us-profiles {
+     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .profile, .profile-info {
+    width: 17vw;
+  }
+
+}
 
 .roberta {
   background-image: url("images/us/roberta-lo-porto-wtm-17.jpg");
