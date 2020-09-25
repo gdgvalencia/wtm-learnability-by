@@ -1216,6 +1216,7 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  mix-blend-mode: multiply;
   width: 100%;
   height: 45vh;
   margin-bottom: 2em;
@@ -1252,6 +1253,7 @@ a:hover {
   font-family: 'Raleway', sans-serif;
   letter-spacing: .15em;
   line-height: calc(1.2em + 2vw);
+  text-align: center;
   
 }
 
@@ -1269,6 +1271,10 @@ a:hover {
   place-items: center;
 }
 
+.profiles {
+  mix-blend-mode: multiply;
+}
+
 .profiles h4 {
   margin: 1em 0 0 0;
   color: #5390F4;
@@ -1279,24 +1285,22 @@ a:hover {
   margin: 0 0 1.5em 0 ;
 }
 
+.profile, .profile-info {
+  width: 75vw;
+}
+
 .profile {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 75vw;
   height: 35vh;
 }
 
 .profile-info {
-  width: 75vw;
   text-align: center;
 }
 
 @media only screen and (min-width: 25em) and (orientation: landscape) {
-  .full-container .us-profiles {
-    /* width: 80vw; */
-  }
-  
   .wtm19-hello {
     height: 100vh;
   }
@@ -1321,14 +1325,13 @@ a:hover {
     height: 100vh;
   }
 
-  .profile {
-   background-size: contain;
-    width: 40vw;
-    height: 60vh;
+  .profile, .profile-info {
+     width: 40vw;
   }
 
-  .profile-info {
-    width: 40vw;
+  .profile {
+    background-size: contain;
+    height: 60vh;
   }
 }
 
@@ -1372,7 +1375,46 @@ a:hover {
     top: 5vw;
     left: 82vw;
   }
+
+  .profiles {
+    height: 50vh;
+  }
+
+  .profile {
+    background-size: cover;
+    width: 40vw;
+    height: 35vh;
+  }
 }
+
+@media only screen and (min-width: 64em) and (orientation: portrait) {
+  .profile {
+    background-size: contain;
+    width: 26vw;
+  }
+
+  .profile-info, .profile {
+    width: 26vw;
+  }
+
+  .vision {
+    width: 60vw;
+  }
+
+  .mision {
+    margin: 1em 0;
+  }
+}
+
+@media only screen and (min-width: 83em) and (orientation: landscape) {
+  .vision {
+    width: 50vw;
+  }
+  .profile {
+    background-size: contain;
+  }
+}
+
 
 .roberta {
   background-image: url("images/us/roberta-lo-porto-wtm-17.jpg");
