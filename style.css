@@ -455,6 +455,12 @@ header {
   }
 }
 
+@media only screen and (min-width: 47em) and (orientation: portrait) {
+  .statement {
+    margin: 0 0 0 2em;
+  }
+}
+
 @media only screen and (min-width: 90em) {
   .statement {
     width: 70vw;
@@ -804,7 +810,7 @@ header {
 
 @media only screen and (min-width: 47em) and (orientation: portrait) {
   .intro {
-    grid-column: 4 / 6;
+    grid-column: 4 / 11;
   }
 
   .intro-box {
@@ -813,8 +819,10 @@ header {
   }
 
   .portrait-container {
+    grid-column:  2 / 2;
     grid-row: 2 / 2;
   }
+
 
   .portrait {
     height: 94px;
@@ -1016,6 +1024,25 @@ header {
   }
 }
 
+@media only screen and (min-width: 47em) and (orientation: portrait) {
+  .summit-img-container {
+    grid-column: span 6 / 13;
+  }
+
+   .description {
+    width: 46vw;
+    grid-column: 1 / span 4;
+  }
+
+    .summit-img {
+    background-size: cover;
+    border-radius: 50%;
+    width: 46vw;
+    background-position: left;
+  }
+
+}
+
 @media only screen and (min-width: 62em) and (orientation: portrait) {
   .summit-img-container {
     grid-column: span 6 / 13;
@@ -1120,6 +1147,12 @@ header {
 @media only screen and (min-width: 25em) and (orientation: landscape) {
   .cover {
     height: 40vh;
+  }
+}
+
+@media only screen and (min-width: 47em) and (orientation: portrait) {
+  .cover {
+    height: 16vh;
   }
 }
 
