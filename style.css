@@ -461,6 +461,12 @@ header {
   }
 }
 
+@media only screen and (min-width: 64em) and (orientation: portrait) {
+  .statement {
+    margin: 2em 0 0 3em;
+  }
+}
+
 @media only screen and (min-width: 90em) {
   .statement {
     width: 70vw;
@@ -904,10 +910,20 @@ header {
 }
 
 @media only screen and (min-width: 62em) and (orientation: portrait) {
+  .bio {
+    grid-column: 1 / span 4;
+    width: 40vw;
+  }
+
+  .quote {
+    grid-column: 6 / span 12;;
+  }
+
   .legendary {
-    background-size: cover;
+    background-size: contain;
     height: 250px;
     width: 1900px;
+    border-radius: 26%; 
   }
 }
 
@@ -1047,10 +1063,20 @@ header {
   .summit-img-container {
     grid-column: span 6 / 13;
   }
+
+  .summit-img-container {
+    height: 32vh;
+  }
   
   .summit-img {
     background-size: cover;
     margin-left: 2em;
+    height: 89%;
+    width: 43vw;
+  }
+  
+  .description {
+    margin-left: 1em;
   }
 
   .description p {
@@ -1159,7 +1185,7 @@ header {
 @media only screen and (min-width: 62em) and (orientation: portrait) {
   .cover {
     background-size: contain;
-    height: 15vh;
+    height: 13vh;
   }
 }
 
