@@ -771,10 +771,11 @@ header {
 
   .bio {
     grid-column: 1 / 12;
+    width: 80vw;
   }
 
   .quote {
-    grid-column: 2 / span 12;
+    grid-column: 1 / span 12;
   }
 
 }
