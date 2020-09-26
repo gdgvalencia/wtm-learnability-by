@@ -1340,7 +1340,8 @@ header {
 }
 
 .profiles p {
-  margin: 0 0 1.5em 0 ;
+  /* margin: 0 0 1.5em 0 ; */
+  margin: 0;
 }
 
 .profile, .profile-info {
@@ -1352,10 +1353,36 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   height: 35vh;
+  border-radius: 6%;
 }
 
 .profile-info {
   text-align: center;
+}
+
+.social {
+  display: inline-block;
+  margin: 0 0 2.5em 1em;
+}
+
+.social .twitter, .social .linkedin {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  margin-top: .5em;
+}
+
+.twitter {
+  background-image: url("images/twitter.png");
+  margin-right: .5em;
+
+}
+
+.linkedin {
+  background-image: url("images/linkedin.png");
+  margin-left: .5em;
 }
 
 @media only screen and (min-width: 25em) and (orientation: landscape) {
@@ -1390,6 +1417,7 @@ header {
   .profile {
     background-size: contain;
     height: 60vh;
+    border-radius: 26%;
   }
 }
 
@@ -1442,6 +1470,7 @@ header {
     background-size: cover;
     width: 40vw;
     height: 35vh;
+    border-radius: 12%;
   }
 }
 
@@ -1449,6 +1478,7 @@ header {
   .profile {
     background-size: contain;
     width: 26vw;
+    border-radius: 20%;
   }
 
   .profile-info, .profile {
@@ -1471,6 +1501,10 @@ header {
   .profile {
     background-size: contain;
   }
+
+  .profile {
+    border-radius: 28%;
+  }
 }
 
 @media only screen and (min-width: 90em) {
@@ -1488,7 +1522,11 @@ header {
   }
 
   .profiles {
-    height: 50vh;
+    height: 53vh;;
+  }
+
+  .profiles h4 {
+    margin: 0;
   }
 
   .profile, .profile-info {
@@ -1496,7 +1534,8 @@ header {
   }
 
   .profile {
-    background-size: contain;
+    background-size: cover;
+    border-radius: 6%;
   }
 
   .us-profiles {
