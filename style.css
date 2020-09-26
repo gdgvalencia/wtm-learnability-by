@@ -566,8 +566,12 @@ header {
   margin: 1em 0 .5em 0;
 }
 
-.post h4 {
+.article {
   text-transform: none;
+  line-height: 1.6;
+  margin: 0.5em 0;
+  text-decoration: underline;
+  color: #1B2D45;
 }
 
 .news-item-title {
@@ -1052,10 +1056,11 @@ header {
 
 .media {
   margin: 1em 0 0 0;
+  font-weight: 600;
 }
 
 .date {
-  margin: .2em 0 0 0;
+  margin: .8em 0 2em 0;
 }
 
 .cover {
