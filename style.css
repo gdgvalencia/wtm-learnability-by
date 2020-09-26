@@ -517,6 +517,14 @@ header {
   }
 } 
 
+@media only screen and (min-width: 47em) and (orientation: portrait) {
+  .line-up-container {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .women-container {
   margin-top: 2em;
 }
@@ -791,6 +799,25 @@ header {
 
   .quote-container {
     margin: 3em 1em 3em 2em;
+  }
+}
+
+@media only screen and (min-width: 47em) and (orientation: portrait) {
+  .intro {
+    grid-column: 4 / 6;
+  }
+
+  .intro-box {
+    grid-column: 1 / 1;
+    grid-row: 1 / 3;
+  }
+
+  .portrait-container {
+    grid-row: 2 / 2;
+  }
+
+  .portrait {
+    height: 94px;
   }
 }
 
@@ -1134,8 +1161,16 @@ header {
   padding: 0 1em;
 }
 
+.about p {
+  font-size: calc(14px + 0.2vw);;
+}
+
+.email {
+  margin: .5em 0;
+}
+
 .follow {
-  margin-top: 2em;
+
   margin-bottom: 3em;
 }
 
@@ -1146,6 +1181,12 @@ header {
 @media only screen and (min-width: 25em) and (orientation: portrait) {
   .footer-container {
     place-items: unset;
+  }
+}
+
+@media only screen and (min-width: 64em) and (orientation: landscape) {
+  .email {
+    margin: .5em 0 2em 0
   }
 }
 
