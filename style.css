@@ -676,6 +676,10 @@ header {
   padding-right: 1em;
 }
 
+.portrait-container {
+  margin-bottom: 2em;
+}
+
 .portrait {
   background-image: url("images/neus-portas.png");
   background-size: contain;
@@ -689,10 +693,69 @@ header {
 }
 
 .embed {
-  background-color: thistle;
+  background-color:#1b2d45;
   margin: auto;
   width: 90%;
   height: 300px;
+  border: 2px solid #04846b;
+}
+
+.player-header {
+  width: 100%;
+  height: 5vh;
+  background-color: #00B692;
+}
+
+.window-circles {
+  position: relative
+}
+
+.window-circle {
+  position: absolute;
+  background-color: #F6F3E1;
+  width: 4%;
+  height: 1.6vh;
+  border-radius: 50%;
+  top: .8em;
+}
+
+.window-circle.left {
+  left: 3em;
+}
+
+.window-circle.right {
+  left: 1em;
+}
+
+.soon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.soon h3 {
+  text-align: center;
+  color: #f5f4ef
+}
+
+.youtube {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 1em;
+}
+
+.youtube-icon {
+  background-image: url("images/youtube.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 14vw;
+  height: 17vh;
+  
 }
 
 .bio {
@@ -753,8 +816,25 @@ header {
   }
 
   .embed {
-    background-color: thistle;
     height: 390px;
+  }
+
+  .player-header {
+    height: 8vh;
+  }
+
+  .window-circle {
+    width: 2%;
+    height: 3.6vh;
+    top: .5em;
+  }
+
+  .soon {
+    margin-top: 2em;
+  }
+
+  .soon h3 {
+    font-size: 2.6em;
   }
 
   .bio {
@@ -796,12 +876,30 @@ header {
   .bio {
     grid-column: 1 / 12;
     width: 80vw;
+    margin-top: 0;
   }
 
   .quote {
     grid-column: 1 / span 12;
   }
 
+  .player-header {
+    height: 6vh;
+  }
+
+  .window-circle {
+    width: 4%;
+    height: 2vh;
+    top: 1em;
+  }
+
+  .soon {
+    margin-top: 3em;
+  }
+
+  .soon h3 {
+    font-size: 2.2em;
+  }
 }
 
 @media only screen and (min-width: 25em) and (orientation: landscape) {
@@ -1616,6 +1714,12 @@ header {
 @media only screen and (min-width: 48em) and (orientation: landscape) {
   #menu {
     height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  #menu {
+    height: 87vh;
   }
 }
 
