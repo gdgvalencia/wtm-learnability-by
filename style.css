@@ -1112,6 +1112,38 @@ header {
   }
 }
 
+@media only screen and (min-width: 90em) {
+  .player-header {
+      height: 4vh;
+  }
+
+  .window-circle {
+    width: 2%;
+  }
+
+  .youtube-icon {
+    width: 5vw;
+    height: 9vh;
+  }
+
+}
+
+@media only screen and (min-width: 120em) {
+  .soon {
+    margin-top: 0;
+  }
+
+  .soon h3 {
+    font-size: 2.2em;
+  }
+
+  .youtube-icon {
+    height: 6vh;
+  }
+}
+
+/* Summit section  */
+
 .summit-title {
   grid-column: 2 / 12;
 }
@@ -1290,6 +1322,16 @@ header {
   .description {
     grid-column: 1 / 7;
     width: 36vw;
+  }
+}
+
+@media only screen and (min-width: 120em) {
+  .summit-title {
+    grid-column: 3 / 9;
+  }
+
+  .summit-img {
+    height: 40vh;
   }
 }
 
