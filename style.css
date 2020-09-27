@@ -1408,6 +1408,12 @@ header {
   }
 }
 
+/* footer */
+
+footer a {
+  color: #1bc89d;
+}
+
 .footer-container {
   place-items: center;
   width: 90vw;
