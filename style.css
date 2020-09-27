@@ -927,9 +927,21 @@ header {
     grid-row: 2 / 2;
   }
 
-
   .portrait {
     height: 94px;
+  }
+
+  .player-header {
+    height: 4vh;
+  }
+
+  .window-circle {
+    width: 2%;
+    height: 1.3vh;
+  }
+
+  .soon {
+    margin-top: 1em;
   }
 }
 
@@ -964,6 +976,28 @@ header {
   .video {
     grid-column: 1 / 13;
     height: 390px;
+  }
+
+  .player-header {
+    height: 5vh;
+  }
+
+  .window-circle {
+    width: 2%;
+    height: 2.4vh;
+  }
+
+  .youtube-icon {
+    width: 8vw;
+    height: 28vh;
+  }
+
+  .soon {
+    margin-top: 3em;
+  }
+
+  .soon h3 {
+    font-size: 2em;
   }
 
   .bio {
@@ -1023,6 +1057,20 @@ header {
     width: 1900px;
     border-radius: 26%; 
   }
+  .player-header {
+    height: 4vh;
+  }
+  .soon {
+    margin-top: 1em;
+  }
+
+  .youtube-icon {
+    height: 18vh;
+  }
+
+  .window-circle {
+    height: 1.4vh;
+  }
 }
 
 @media only screen and (min-width: 82.5em) {
@@ -1032,6 +1080,24 @@ header {
 
   .video {
     grid-column: 1 / 7;
+  }
+
+  .player-header {
+    height: 3vh;
+  }
+
+  .window-circle {
+    width: 3%;
+    height: 1.5vh;
+  }
+
+  .soon {
+    margin-top: 2em;
+  }
+
+  .youtube-icon {
+    width: 8vw;
+    height: 10vh;
   }
 
   .bio {
