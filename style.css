@@ -14,8 +14,14 @@ h1, h2, h3, h4 {
   font-family: 'Raleway', sans-serif;
   letter-spacing: .15em;
   text-transform: uppercase;
-  line-height: calc(1.2em + 2vw);
+  line-height: calc(1em + 2vw);
   font-weight: 800;
+}
+
+@media only screen and (min-width: 90em) {
+  h1 {
+    line-height: calc(1em + 1vw);
+  } 
 }
 
 ul {
@@ -1047,6 +1053,7 @@ header {
   .bio {
     grid-column: 1 / span 4;
     width: 40vw;
+    margin-top: 2em;
   }
 
   .quote {
