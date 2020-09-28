@@ -575,6 +575,7 @@ header {
   border: 3px solid #20E9B7;
   border-radius: 30px;
   box-shadow: 5px 10px #888888;
+  box-shadow: 6px 7px 5px 1px #575859;
   margin-bottom: 3em;
 }
 
@@ -698,6 +699,7 @@ header {
   width: 90%;
   height: 300px;
   border: 2px solid #04846b;
+  box-shadow: -1px 13px 26px -1px #1b2d45;
 }
 
 .player-header {
@@ -1283,7 +1285,7 @@ header {
 @media only screen and (min-width: 62em) and (orientation: landscape) {
   .summit-img {
     margin-left: 3em;
-    height: 100%;
+    height: 33vh;
   }
 
   .description {
@@ -1325,13 +1327,19 @@ header {
   }
 }
 
+@media only screen and (min-width: 90em) {
+  .summit-img {
+    height: 43vh;
+  }
+}
+
 @media only screen and (min-width: 120em) {
   .summit-title {
     grid-column: 3 / 9;
   }
 
   .summit-img {
-    height: 40vh;
+    height: 48vh;
   }
 }
 
@@ -1356,6 +1364,7 @@ header {
   height: 25vh;
   max-height: 100%;
   border-radius: 30px;
+  box-shadow: -1px 13px 26px -1px #1b2d457a;
 }
 
 .first {
