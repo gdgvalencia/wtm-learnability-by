@@ -1904,7 +1904,7 @@ footer a {
 
 #menuToggle input:checked ~ span {
   opacity: 1;
-  transform: rotate(45deg) translate(-3px, -1px);
+  transform: rotate(38deg) translate(-3px, -1px);
   background: #5390F4;
 }
 
@@ -1914,5 +1914,5 @@ footer a {
 }
 
 #menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
+  transform: rotate(-38deg) translate(0, -1px);
 }
