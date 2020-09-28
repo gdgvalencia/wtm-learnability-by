@@ -1568,7 +1568,6 @@ footer a {
 }
 
 .profiles p {
-  /* margin: 0 0 1.5em 0 ; */
   margin: 0;
 }
 
@@ -1636,6 +1635,10 @@ footer a {
 
   .profiles {
     height: 100vh;
+  }
+
+  .profiles p {
+    line-height: calc(1em + 0.5vw);
   }
 
   .profile, .profile-info {
@@ -1743,6 +1746,7 @@ footer a {
   .vision {
     width: 50vw;
     padding: 0;
+    line-height: calc(1.2em + 1vw);
   }
 
   .mision {
