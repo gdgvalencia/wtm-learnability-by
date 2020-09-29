@@ -676,19 +676,7 @@ header {
   }
 }
 
-
 /* lauching interview */
-.span-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;  
-  grid-template-columns: repeat(12, 1fr);
-}
-
-.intro {
-  grid-column: 1 / 13;
-}
-
 .intro-container {
   margin: 1em;
 }
@@ -709,20 +697,12 @@ header {
   padding-right: 1em;
 }
 
-.portrait-container {
-  margin-bottom: 2em;
-}
-
 .portrait {
   background-image: url("images/neus-portas.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
   height: 168px;
-}
-
-.video {
-  grid-column: 1 / 13;
 }
 
 .embed {
@@ -793,13 +773,11 @@ header {
 }
 
 .bio {
-  grid-column: 1 / 12;
   padding: 1em 2em;
   width: 80vw;
 }
 
 .quote {
-  grid-column: 1 / 13;
   width: 100%;
 }
 
@@ -823,33 +801,22 @@ header {
   border-radius: 50%;
 }
 
-@media only screen and (min-width: 25em) {
-  .intro-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr; 
-    grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: 1fr, 1fr;
-    grid-template-rows: repeat(2, 1fr);
+@media only screen and (min-width: 25em) and (orientation: landscape) {
+  .intro-title {
+    width: 50%;
+    margin: auto;
   }
-  
+
   .intro-box {
-    grid-column: 1 / 1;
-    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
-  .portrait-container {
-    grid-column: 2 / 2;
-    grid-row: 2 / 3;
-  }
-
-  .intro {
-    grid-column: 4 /11;
-  }
-
-  .video {
-    grid-column: 1 / 13;
-    
+  .portrait {
+    height: 109px;
+    width: 14%;
   }
 
   .embed {
@@ -874,24 +841,33 @@ header {
     font-size: 2.6em;
   }
 
+  .bio-container {
+    display: flex;
+    flex-direction: row;
+  }
+
   .bio {
-    grid-column: 1 / span 4;
     width: 36vw;
-    padding: 1em 1em 0em 3em;
+    padding: 1em 3em 0em 3em;
     margin-top: 2em;
   }
 
   .quote {
-    grid-column: 6 / span 9; 
+    width: 100vh;
   }
 
-   .quote-text {
+  .quote-container {
+    margin: 2em 0em 3em 0em;
+  }
+
+  .quote-text {
     font-size: calc(26px + 0.2vw);
     line-height: calc(1.5em + 0.5vw);
   }
 
-  .quote-container {
-    margin: 3em 1em 3em 2em;
+  .legendary {
+    height: 116vh;
+    width: 113vw;
   }
 }
 
@@ -936,16 +912,6 @@ header {
 
   .soon h3 {
     font-size: 2.2em;
-  }
-}
-
-@media only screen and (min-width: 25em) and (orientation: landscape) {
-   .portrait {
-    height: 94px;
-  }
-
-  .quote-container {
-    margin: 3em 1em 3em 2em;
   }
 }
 
@@ -1219,9 +1185,6 @@ header {
 }
 
 @media only screen and (min-width: 25em) {
-  .span-container {
-    grid-auto-flow: dense;
-  }
   
   .summit-title {
     grid-column: 2 / 11;
