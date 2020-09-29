@@ -1084,23 +1084,24 @@ header {
 
 @media only screen and (min-width: 90em) {
   .intro-title {
-    width: 35%;
+    width: 30%;
   }
 
   .bio {
-    padding: 1em 3em 0em 4em;
+    padding: 3em 3em 0em 4em;
   }
 
   .quote {
     width: 73vh;
   }
 
-  .quote-text {
-    padding-right: 2em;
+  .quote p {
+    margin: 0 0 0 1em;
+    padding-right: 1em;
   }
 
   .legendary {
-    border-radius: 47%;
+    border-radius: 49%;
   }
   
   .player-header {
@@ -1124,6 +1125,9 @@ header {
 }
 
 @media only screen and (min-width: 120em) {
+  .intro-title {
+    width: 27%;
+  }
   .soon {
     margin-top: 0;
   }
