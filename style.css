@@ -417,11 +417,18 @@ header {
     height: 90vh;
   }
 
+  .big-big-green {
+    height: 16vh;
+    background-size: contain;
+    width: 9vw;
+  }
+
   .big-green {
     height: 24vh;
   }
 
   .big-big-blue {
+  width: 11vw;
     height: 27vh;
     top: 28vw;
   }
