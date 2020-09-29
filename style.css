@@ -391,10 +391,13 @@ header {
   }
 
   .big-big-green {
-    height: 19vh;
+    height: 16vh;
+    background-size: contain;
+    width: 9vw;
   }
 
   .big-big-blue {
+    width: 11vw;
     height: 25vh;
     top: 34vw;
   }
