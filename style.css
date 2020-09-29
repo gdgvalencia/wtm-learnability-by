@@ -688,7 +688,6 @@ header {
 .intro-box h2 {
   text-align: center;
   margin-bottom: 0;
-  padding-right: 1em;
 }
 
 .intro-box p {
@@ -769,7 +768,6 @@ header {
   background-repeat: no-repeat;
   width: 14vw;
   height: 9vh;
-  
 }
 
 .bio {
@@ -814,9 +812,14 @@ header {
     justify-content: center;
   }
 
+  .intro-box h2, .intro-box p {
+    text-align: right;
+    padding-right: 0;
+  }
+
   .portrait {
-    height: 109px;
-    width: 14%;
+    height: 23vh;
+    width: 12vw;
   }
 
   .embed {
@@ -871,67 +874,35 @@ header {
   }
 }
 
-@media only screen and (min-width: 25em) and (orientation: portrait) {
-  .intro {
-    grid-column: 2 / 12;
-  }
-
-  .intro-box {
-    grid-column: 1 / 1;
-    grid-row: 1 / 3;
-  }
-
-  .portrait-container {
-    grid-column: 1 / 2;
-    grid-row: 3 / 3;
-  }
-
-  .bio {
-    grid-column: 1 / 12;
-    width: 80vw;
-    margin-top: 0;
-  }
-
-  .quote {
-    grid-column: 1 / span 12;
-  }
-
-  .player-header {
-    height: 6vh;
-  }
-
-  .window-circle {
-    width: 4%;
-    height: 2vh;
-    top: 1em;
-  }
-
-  .soon {
-    margin-top: 3em;
-  }
-
-  .soon h3 {
-    font-size: 2.2em;
-  }
-}
-
 @media only screen and (min-width: 47em) and (orientation: portrait) {
-  .intro {
-    grid-column: 4 / 11;
+  .intro-title {
+    width: 50%;
+    margin: auto;
   }
 
   .intro-box {
-    grid-column: 1 / 1;
-    grid-row: 1 / 3;
-  }
-
-  .portrait-container {
-    grid-column:  2 / 2;
-    grid-row: 2 / 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
   .portrait {
-    height: 94px;
+    height: 9vh;
+    width: 12vw;
+  }
+  
+  .bio {
+    padding: 1em 3em;
+  }
+
+  .quote-container {
+    margin: 0 0 3em 3em;
+  }
+
+  .youtube-icon {
+    width: 9vw;
+    height: 18vh;
   }
 
   .player-header {
@@ -944,41 +915,25 @@ header {
   }
 
   .soon {
-    margin-top: 1em;
+    margin-top: 3em;
   }
 }
 
-@media only screen and (min-width: 62em) {
+@media only screen and (min-width: 62em) and (orientation: landscape) {
+  .intro-title {
+    width: 45%;
+  }
+
   .portrait-container {
-    grid-row: 1 / 2;
     margin-top: 2em;
-  }
-
-  .intro-container {
-    -ms-grid-rows: 1fr;
-    grid-template-rows: repeat(1, 1fr);
-    margin-top: 2em;
-  }
-  
-  .intro {
-    grid-column: 4 / 11;
-  }
-
-  .intro-box {
-    text-align: right;
-  }
-
-  .intro-box h1, .intro-box h2, .intro-box p {
-    text-align: right;
-    padding-right: 0;
   }
 
   .portrait {
-    height: 192px;
+    height: 16vh;
+    width: 12vw;
   }
 
   .video {
-    grid-column: 1 / 13;
     height: 390px;
   }
 
@@ -1004,10 +959,6 @@ header {
     font-size: 2em;
   }
 
-  .bio {
-    grid-column: 1 / span 5;
-  }
-
   .bio p {
     margin: 0;
   }
@@ -1017,22 +968,11 @@ header {
   }
 
   .quote {
-    grid-column: 6 / span 8; 
-  }
-
-  .quote-container {
-    margin: 3em 3em 3em 2em;;
+    width: 65vh;
   }
 
   .quote-text p {
     margin: 0 0 0 2em;
-  }
-
-}
-
-@media only screen and (min-width: 62em) and (orientation: landscape) {
-  .portrait {
-      margin-left: 2em;
   }
 
   .quote-container {
@@ -1043,6 +983,7 @@ header {
     height: 230px;
     width: 900px;
   }
+
 }
 
 @media only screen and (min-width: 62em) and (orientation: portrait) {
