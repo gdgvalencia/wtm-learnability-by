@@ -78,10 +78,6 @@ header {
   background-position: center;
 }
 
-.circle:hover {
-  background-size: contain;
-}
-
 .big-green {
   background-image: url("images/circles/big-green.svg");
   background-size: contain;
