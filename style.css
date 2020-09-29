@@ -41,7 +41,9 @@ a:hover {
 }
 
 .main-container {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
   width: 100vw;
   overflow: hidden;
@@ -523,23 +525,40 @@ header {
 
 @media only screen and (min-width: 25em) {
   .line-up-container {
+    display: -ms-grid;
     display: grid;
     grid-gap: 3rem;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  @supports (grid-gap: 3rem) {
+    .line-up-container {
+      grid-gap: 3rem;
+    }
   }
 } 
 
 @media only screen and (min-width: 25em) and (orientation: portrait) {
   .line-up-container {
+    -ms-grid-columns: unset;
     grid-template-columns: unset;
   }
 } 
 
 @media only screen and (min-width: 47em) and (orientation: portrait) {
   .line-up-container {
+    display: -ms-grid;
     display: grid;
     grid-gap: 3rem;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
+  }
+  
+  @supports (grid-gap: 3rem) {
+    .line-up-container {
+      grid-gap: 3rem;
+    }
   }
 }
 
@@ -628,6 +647,12 @@ header {
   .cards {
     padding: 1em;
   }
+
+  @supports (grid-gap: 1rem) {
+    .line-up-container {
+      grid-gap: 1rem;
+    }
+  }
 }
 
 @media only screen and (min-width: 25em) and (orientation: portrait) {
@@ -644,6 +669,12 @@ header {
    .cards {
     padding: 2em;
   }
+
+  @supports (grid-gap: 1rem) {
+    .line-up-container {
+      grid-gap: 3rem;
+    }
+  }
 }
 
 @media only screen and (min-width: 82.5em) {
@@ -655,7 +686,9 @@ header {
 
 /* lauching interview */
 .span-container {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;  
   grid-template-columns: repeat(12, 1fr);
 }
 
@@ -799,8 +832,11 @@ header {
 
 @media only screen and (min-width: 25em) {
   .intro-container {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr; 
     grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr, 1fr;
     grid-template-rows: repeat(2, 1fr);
   }
   
@@ -960,6 +996,7 @@ header {
   }
 
   .intro-container {
+    -ms-grid-rows: 1fr;
     grid-template-rows: repeat(1, 1fr);
     margin-top: 2em;
   }
@@ -1553,6 +1590,7 @@ footer a {
 }
 
 .us-profiles {
+  display:-ms-grid;
   display: grid;
   place-items: center;
 }
@@ -1630,6 +1668,7 @@ footer a {
   }
 
   .us-profiles {
+    -ms-grid-columns: 1fr, 1fr;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1771,7 +1810,8 @@ footer a {
   }
 
   .us-profiles {
-     grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr, 1fr, 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -1782,7 +1822,8 @@ footer a {
   }
 
   .us-profiles {
-     grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .profile, .profile-info {
