@@ -931,6 +931,7 @@ header {
   .portrait {
     height: 16vh;
     width: 12vw;
+    margin-left: 1em;
   }
 
   .video {
@@ -987,22 +988,35 @@ header {
 }
 
 @media only screen and (min-width: 62em) and (orientation: portrait) {
-  .bio {
-    grid-column: 1 / span 4;
-    width: 40vw;
-    margin-top: 2em;
+  .intro-title {
+    width: 45%;
   }
 
   .quote {
-    grid-column: 6 / span 12;;
+    width: 40vh;
+  }
+
+  .quote-container {
+    margin: 2em 0 1em 2em;
+  }
+
+  .bio-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bio {
+    width: 40vw;
+    margin-top: 1em;
+    padding-right: 2em;
   }
 
   .legendary {
-    background-size: contain;
     height: 250px;
     width: 1900px;
     border-radius: 26%; 
   }
+
   .player-header {
     height: 4vh;
   }
@@ -1019,22 +1033,14 @@ header {
   }
 }
 
-@media only screen and (min-width: 82.5em) {
-  .intro {
-    grid-column: 3 / 10;
-  }
-
-  .video {
-    grid-column: 1 / 7;
-  }
-
+@media only screen and (min-width: 83em) {
   .player-header {
-    height: 3vh;
+    height: 4vh;
   }
 
   .window-circle {
-    width: 3%;
-    height: 1.5vh;
+    width: 2%;
+    height: 2vh;
   }
 
   .soon {
@@ -1042,19 +1048,19 @@ header {
   }
 
   .youtube-icon {
-    width: 8vw;
-    height: 3vh;
+    width: 6vw;
+    height: 25vh;
   }
 
   .bio {
-    grid-column: 7 / span 5;
     width: 34vw;
-    padding: 0em 1em 0em 3em;
+    padding: 3em 0em 0em 4em;
     margin-top: 0;
   }
 
-  .quote {
-    grid-column: 2 / span 10; 
+  .legendary {
+    height: 314px;
+    border-radius: 36%;
   }
 }
 
