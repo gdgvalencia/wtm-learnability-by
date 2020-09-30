@@ -1604,6 +1604,39 @@ footer a {
   }
 }
 
+@media only screen and (min-width: 47em) and (orientation: portrait) {
+  .disclaimer {
+    flex-direction: row-reverse;
+  }
+
+  .made-by {
+    flex: 1;
+    text-align: left;
+    margin-left: 5em;
+    margin-top: 1em;
+  }
+
+  .gdg-footer {
+    width: 29vw;
+    height: 4vh;
+  }
+
+  .wtm-icon {
+    height: 2vh;
+    width: 4vw;
+  }
+}
+
+@media only screen and (min-width: 64em) and (orientation: landscape) {
+  .gdg-footer {
+    height: 6vh;
+  }
+
+  .made-by {
+    margin-top: 2em;
+  }
+}
+
 @media only screen and (min-width: 90em) {
   .disclaimer {
     justify-content: center;
