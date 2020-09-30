@@ -1536,6 +1536,75 @@ footer a {
   }
 }
 
+.disclaimer {
+  display: flex;
+  flex-direction: column;
+  background-color: #00B692;
+}
+
+.made-by {
+  margin: 0 0 .5em 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.d-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: .5em;
+}
+
+.gdg-footer {
+  background-image: url("images/gdg-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 6vh;
+}
+
+.wtm-icon {
+  background-image: url("images/wtm-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 12vw;
+  height: 6vh;
+}
+
+@media only screen and (min-width: 25em) and (orientation: landscape) {
+  .disclaimer {
+    flex-direction: row-reverse;
+  }
+
+  .made-by {
+    flex: 1;
+    text-align: left;
+    margin-left: 1em;
+    margin-top: .6em;
+  }
+
+  .gdg-footer {
+    width: 14vw;
+    height: 10vh;
+  }
+
+  .wtm-icon {
+    width: 4vw;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .disclaimer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gdg-footer {
+    height: 6vh;
+  }
+}
+
 /* -------------------- Us page ---------------- */
 .us-cover .title {
   margin-top: 2em;
