@@ -1027,7 +1027,11 @@ header {
 
   .video {
     grid-column: 1 / 13;
-    height: 390px;
+    height: 480px;
+  }
+
+  .embed {
+    height: 480px;
   }
 
   .player-header {
@@ -1134,6 +1138,12 @@ header {
   .video {
     grid-column: 1 / 7;
   }
+
+
+  .video, .embed {
+    height: 410px;
+  }
+
 
   .player-header {
     height: 3vh;
