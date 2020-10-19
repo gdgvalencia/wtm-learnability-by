@@ -728,11 +728,18 @@ header {
 }
 
 .portrait {
-  background-image: url("images/neus-portas.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
   height: 168px;
+}
+
+.neus-img {
+  background-image: url("images/neus-portas.png");
+}
+
+.carmen-img {
+  background-image: url("images/carmen.png");
 }
 
 .video {
@@ -827,14 +834,25 @@ header {
 }
 
 .legendary {
-  background-image: url("images/marie-curie.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   mix-blend-mode: overlay;
+  
+
+}
+
+.neus-ref {
+  background-image: url("images/marie-curie.png");
+  border-radius: 50%;
   height: 170px;
   width: 900px;
-  border-radius: 50%;
+}
+
+.carmen-ref {
+  background-image: url("images/margaret-hamilton.png");
+  height: 170px;
+  width: 900px;
 }
 
 @media only screen and (min-width: 25em) {
