@@ -523,49 +523,35 @@ header {
   margin: auto;
 }
 
-@media only screen and (min-width: 82.5em) {
-  .line-up-container.news {
-    width: 80vw;
-    margin: auto;
-  }
-}
 
-@media only screen and (min-width: 25em) {
+
+@media only screen and (min-width: 25em) and (orientation: landscape) {
   .line-up-container {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 3rem;
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
   }
 
-  @supports (grid-gap: 3rem) {
-    .line-up-container {
-      grid-gap: 3rem;
-    }
+  .card {
+    margin: 0 1em 3em 0;
   }
 } 
 
 @media only screen and (min-width: 25em) and (orientation: portrait) {
   .line-up-container {
-    -ms-grid-columns: unset;
-    grid-template-columns: unset;
+    display: block;
   }
 } 
 
 @media only screen and (min-width: 47em) and (orientation: portrait) {
   .line-up-container {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 3rem;
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
   }
-  
-  @supports (grid-gap: 3rem) {
-    .line-up-container {
-      grid-gap: 3rem;
-    }
+}
+
+@media only screen and (min-width: 82.5em) {
+  .line-up-container.news {
+    width: 80vw;
+    margin: auto;
   }
 }
 
@@ -642,9 +628,9 @@ header {
   margin-left: .5em;
 }
 
-@media only screen and (min-width: 25em)  {
-  .line-up-container {
-    grid-gap: 1rem;
+@media only screen and (min-width: 25em) and (orientation: landscape) {
+  .value-item, .news-item {
+    width: 30%;
   }
 
   .item-title {
@@ -655,11 +641,6 @@ header {
     padding: 1em;
   }
 
-  @supports (grid-gap: 1rem) {
-    .line-up-container {
-      grid-gap: 1rem;
-    }
-  }
 }
 
 @media only screen and (min-width: 25em) and (orientation: portrait) {
@@ -668,19 +649,31 @@ header {
   }
 }
 
-@media only screen and (min-width: 62em) {
-  .line-up-container {
-    grid-gap: 3rem;
+@media only screen and (min-width: 47em) and (orientation: portrait) {
+  .value-item, .news-item {
+    width: 30%;
+  }
+  
+  .card.value-item {
+    margin: 0 1em 3em 0;
   }
 
+  .item-title {
+    padding: 0 0.5em 0 .5em;
+    margin: 1em 0 .5em 0;
+  }
+}
+
+@media only screen and (min-width: 47em) and (orientation: landscape) {
+  .item-title {
+    padding: 0 0.5em 0 .5em;
+
+  }
+}
+
+@media only screen and (min-width: 62em) {
    .cards {
     padding: 2em;
-  }
-
-  @supports (grid-gap: 1rem) {
-    .line-up-container {
-      grid-gap: 3rem;
-    }
   }
 }
 
@@ -1478,7 +1471,6 @@ header {
 
 @media only screen and (min-width: 62em) and (orientation: portrait) {
   .cover {
-    background-size: contain;
     height: 13vh;
   }
 }
