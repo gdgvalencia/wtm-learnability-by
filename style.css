@@ -1096,19 +1096,17 @@ header {
 }
 
 @media only screen and (min-width: 82.5em) {
-  .intro {
-    grid-column: 3 / 10;
-  }
-
   .video {
     grid-column: 1 / 7;
   }
-
 
   .video, .embed {
     height: 410px;
   }
 
+  .soon h3 {
+    font-size: 2em;
+  }
 
   .player-header {
     height: 3vh;
@@ -1119,10 +1117,6 @@ header {
     height: 1.5vh;
   }
 
-  .soon {
-    margin-top: 2em;
-  }
-
   .youtube-icon {
     width: 8vw;
     height: 3vh;
@@ -1130,13 +1124,20 @@ header {
 
   .bio {
     grid-column: 7 / span 5;
-    width: 34vw;
-    padding: 0em 1em 0em 3em;
     margin-top: 0;
   }
 
   .quote {
-    grid-column: 2 / span 10; 
+    grid-column: 3 / 11; 
+  }
+
+  .legendary {
+    margin-left: 5.5em;
+    float: right;
+  }
+
+  .carmen-ref, .neus-ref {
+    width: 30%;
   }
 }
 
