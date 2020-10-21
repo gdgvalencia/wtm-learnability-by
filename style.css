@@ -819,25 +819,26 @@ header {
 
 .legendary {
   mix-blend-mode: overlay;
-  float: left;
-  margin-right: 1.5em;
   -webkit-shape-margin: .25em;
   shape-margin: .25em;
   -webkit-shape-outside: circle(50%);
   shape-outside: circle(50%);
   margin-bottom: .5em;
+  min-width: 150px;
 }
 
 .neus-ref {
-  height: 170px;
-  width: 900px;
+  float: right;
+  margin-left: 2.5em;
+  height: 236px;
+  width: 49%;
 }
 
-.carmen-ref {
+.carmen-ref  {
+  float: left;
+  margin-right: 1.5em;
   width: 50%; 
   height: auto;
-  min-width: 150px;
-  
 }
 
 @media only screen and (min-width: 25em) and (orientation: portrait) {
@@ -944,7 +945,6 @@ header {
     display: grid;
     -ms-grid-columns: 1fr 1fr; 
     grid-template-columns: repeat(8, 1fr);
-  
   }
   
   .intro-box {
@@ -993,15 +993,14 @@ header {
 
   .carmen-ref {
     width: 40%;
+    margin-right: 3em;
   }
 
-  .legendary {
-      margin-right: 3em;
+  .neus-ref {
+    margin-left: 3em;
+    margin-right: 3em;
+    width: 39%;
   }
-}
-
-@media only screen and (min-width: 62em) {
-  
 }
 
 @media only screen and (min-width: 62em) and (orientation: landscape) {
@@ -1038,6 +1037,10 @@ header {
 
   .quote-container {
     margin: 3em 1em;
+  }
+
+  .neus-ref {
+    margin-right: 2em;
   }
 
   .embed {
@@ -1092,6 +1095,17 @@ header {
 
   .quote-text {
     margin: 0 0 0 2em;
+  }
+
+  .neus-ref {
+    margin-right: 0;
+    width: 50%;
+    margin-left: 2.5em;
+  }
+
+  .carmen-ref {
+    width: 40%;
+    margin-right: 1.5em;
   }
 }
 
@@ -1153,6 +1167,14 @@ header {
   .youtube-icon {
     width: 5vw;
     height: 9vh;
+  }
+
+  .legendary {
+    margin-left: 11.5em;
+  }
+
+  .carmen-ref, .neus-ref {
+    width: 25%;
   }
 
 }
@@ -1357,6 +1379,10 @@ header {
 @media only screen and (min-width: 90em) {
   .summit-img {
     height: 43vh;
+  }
+
+  .description {
+    margin-left: 4.4em;
   }
 }
 
