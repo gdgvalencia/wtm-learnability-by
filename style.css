@@ -1001,54 +1001,7 @@ header {
 }
 
 @media only screen and (min-width: 62em) {
- 
-
-  .player-header {
-    height: 5vh;
-  }
-
-  .window-circle {
-    width: 2%;
-    height: 2.4vh;
-  }
-
-  .youtube-icon {
-    width: 8vw;
-    height: 21vh;
-  }
-
-  .soon {
-    margin-top: 3em;
-  }
-
-  .soon h3 {
-    font-size: 2em;
-  }
-
-  .bio {
-    grid-column: 1 / span 5;
-  }
-
-  .bio p {
-    margin: 0;
-  }
-
-  .bio p:first-child {
-    margin-bottom: 2em;
-  }
-
-  .quote {
-    grid-column: 6 / span 8; 
-  }
-
-  .quote-container {
-    margin: 3em 3em 3em 2em;;
-  }
-
-  .quote-text p {
-    margin: 0 0 0 2em;
-  }
-
+  
 }
 
 @media only screen and (min-width: 62em) and (orientation: landscape) {
@@ -1093,35 +1046,52 @@ header {
 }
 
 @media only screen and (min-width: 62em) and (orientation: portrait) {
+  .video, .embed {
+    height: 410px;
+  }
+  
+  .player-header {
+    height: 4vh;
+  }
+
+  .youtube-icon {
+    height: 4vh;
+  }
+
+  .window-circle {
+  
+    height: 1.5vh;
+  }
+
+  .soon h3 {
+    font-size: 2em;
+  }
+
   .bio {
     grid-column: 1 / span 4;
     width: 40vw;
     margin-top: 2em;
+    padding: 1em 4em;
+  }
+
+  .bio p {
+    margin: 0;
+  }
+
+  .bio p:first-child {
+    margin-bottom: 2em;
   }
 
   .quote {
-    grid-column: 6 / span 12;;
+    grid-column: 6 / span 12;
   }
 
-  .legendary {
-    background-size: contain;
-    height: 250px;
-    width: 1900px;
-    border-radius: 26%; 
-  }
-  .player-header {
-    height: 4vh;
-  }
-  .soon {
-    margin-top: 1em;
+  .quote-container {
+    margin: 4em;
   }
 
-  .youtube-icon {
-    height: 14vh;
-  }
-
-  .window-circle {
-    height: 1.4vh;
+  .quote-text {
+    margin: 0 0 0 2em;
   }
 }
 
