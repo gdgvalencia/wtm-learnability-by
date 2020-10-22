@@ -712,10 +712,6 @@ header {
   margin-top: 0;
 }
 
-.portrait-container {
-  margin-bottom: 2em;
-}
-
 .portrait {
   background-size: contain;
   background-repeat: no-repeat;
@@ -2235,14 +2231,51 @@ footer a {
 }
 
 .slider {
+  overflow: hidden;
+}
+
+.slides {
   width: 100%;
   height: 100%;
   display: flex;
   overflow-x: auto;
+  scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
 }
 
 .slide {
   width: 100%;
   flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.slider-btn {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.slider-btn > a {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  margin: 0.5rem;
+  border-radius: 50%;
+
+}
+
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
 }
