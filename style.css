@@ -2272,10 +2272,3 @@ footer a {
 .slider > a:focus {
   background: #000;
 }
-
-/* Don't need button navigation */
-@supports (scroll-snap-type) {
-  .slider > a {
-    display: none;
-  }
-}
