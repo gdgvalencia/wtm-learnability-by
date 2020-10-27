@@ -595,9 +595,15 @@ header {
   }
 }
 
+@media only screen and (min-width: 82em) and (orientation: landscape){
+  .statement {
+    width: 70vw;
+  } 
+} 
+
 @media only screen and (min-width: 90em) {
   .statement {
-    width: 50vw;
+    width: 55vw;
     padding: .5em;
   }
 }
