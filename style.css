@@ -453,55 +453,6 @@ header {
 
 }
 
-.statement {
-  width: 90vw;
-  margin: auto;
-  margin-top: 2em;
-  text-align: center;
-  padding: 2em 0;
-  background-color: #c8c8c83b;
-  box-shadow: 1px 11px 21px 0px #88888852;
-}
-
-@media only screen and (min-width: 25em) and (orientation: portrait) {
-  .statement {
-    margin: 2em 1em;
-    width: 90vw;
-  }
-}
-
-@media only screen and (min-width: 47em) and (orientation: portrait) {
-  .statement {
-    margin: 0 0 0 2em;
-  }
-}
-
-@media only screen and (min-width: 64em) and (orientation: portrait) {
-  .statement {
-    margin: 2em 0 0 3em;
-  }
-}
-
-@media only screen and (min-width: 90em) {
-  .statement {
-    width: 70vw;
-  }
-}
-
-@media only screen and (min-width: 120em) {
-  .statement {
-    width: 50vw;
-  }
-}
-
-.statement p {
-  padding: 0 1em;
-}
-
-.title {
-  text-align: center;
-}
-
 .full-container {
   width: 100vw; 
   margin: auto;
@@ -522,8 +473,6 @@ header {
   margin-bottom: calc(1em + 5vh);
   margin: auto;
 }
-
-
 
 @media only screen and (min-width: 25em) and (orientation: landscape) {
   .line-up-container {
@@ -570,6 +519,89 @@ header {
   background-color: #00B692;
 }
 
+
+/* statement and subscription */
+.statement {
+  width: 90vw;
+  margin: auto;
+  margin-top: 2em;
+  text-align: center;
+  padding: 2em 0;
+  background-color: #c8c8c83b;
+  box-shadow: 1px 11px 21px 0px #88888852;
+}
+
+.statement p {
+  padding: 0 1em;
+}
+
+.title {
+  text-align: center;
+}
+
+.subscription-title {
+  margin-bottom: 0;
+  margin-top: 2em;
+} 
+
+.rss {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} 
+
+.platform {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 .5em;
+} 
+
+.ivoox {
+  background-image: url("images/logo_ivoox_black@2x.png");
+  height: 50px;
+  width: 80px;
+} 
+
+.spotify {
+  background-image: url("images/spotify-logo.png");
+  height: 86px;
+  width: 100px;
+}
+
+.youtube {
+  background-image: url("images/youtube.png");
+  height: 50px;
+  width: 70px;
+}
+
+@media only screen and (min-width: 25em) and (orientation: portrait) {
+  .statement {
+    margin: 2em 1em;
+    width: 90vw;
+  }
+}
+
+@media only screen and (min-width: 47em) and (orientation: portrait) {
+  .statement {
+    margin: 0 0 0 2em;
+  }
+}
+
+@media only screen and (min-width: 64em) and (orientation: portrait) {
+  .statement {
+    margin: 2em 0 0 3em;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .statement {
+    width: 50vw;
+    padding: .5em;
+  }
+}
+
 /* values */
 .values .title {
   margin-top: 4em;
@@ -599,9 +631,6 @@ header {
 
 .item-title {
   padding: 0 0 0 1em;
-}
-
-.item-title {
   margin: 1em 0 .5em 0;
 }
 
@@ -640,7 +669,6 @@ header {
   .cards {
     padding: 1em;
   }
-
 }
 
 @media only screen and (min-width: 25em) and (orientation: portrait) {
@@ -772,30 +800,13 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 .soon h3 {
   font-size: 1.5em;
   text-align: center;
   color: #f5f4ef;
-}
-
-.youtube {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin-right: 1em;
-}
-
-.youtube-icon {
-  background-image: url("images/youtube.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 14vw;
-  height: 5vh;
 }
 
 .bio {
@@ -849,7 +860,7 @@ header {
   }
 
   .soon {
-    margin-top: 3em;
+    margin-top: 1em;
   }
 
    .quote {
@@ -1006,17 +1017,12 @@ header {
   }
 
   .soon {
-    margin-top: 1em;
+    margin-top: 0;
   }
 
   .soon h3 {
     font-size: 1.2em;
     padding: 1em 5em;
-  }
-
-  .youtube-icon {
-    height: 11vh;
-    width: 9vw;
   }
 
   .carmen-ref {
@@ -1123,10 +1129,6 @@ header {
     height: 4vh;
   }
 
-  .youtube-icon {
-    height: 3vh;
-  }
-
   .window-circle {
     height: 1.1vh;
   }
@@ -1227,11 +1229,6 @@ header {
     top: .5em;
   }
 
-  .youtube-icon {
-    width: 8vw;
-    height: 7vh;
-  }
-
   .bio {
     grid-column: 8 / span 2;
     margin-top: 0;
@@ -1297,11 +1294,6 @@ header {
     width: 2%;
   }
 
-  .youtube-icon {
-    width: 5vw;
-    height: 9vh;
-  }
-
   .legendary {
     margin-left: 11.5em;
   }
@@ -1329,10 +1321,6 @@ header {
 
   .soon h3 {
     font-size: 2.2em;
-  }
-
-  .youtube-icon {
-    height: 6vh;
   }
 }
 
