@@ -761,6 +761,10 @@ header {
   background-image: url("images/carmen.png");
 }
 
+.angelica-img {
+  background-image: url("images/angelica.png");
+}
+
 .video {
   grid-column: 1 / 13;
 }
@@ -848,6 +852,13 @@ header {
 }
 
 .carmen-ref  {
+  float: left;
+  margin-right: 1.5em;
+  width: 50%; 
+  height: auto;
+}
+
+.angelica-ref  {
   float: left;
   margin-right: 1.5em;
   width: 50%; 
