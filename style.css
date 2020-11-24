@@ -761,6 +761,10 @@ header {
   background-image: url("images/carmen.png");
 }
 
+.angelica-img {
+  background-image: url("images/angelica.png");
+}
+
 .video {
   grid-column: 1 / 13;
 }
@@ -852,6 +856,14 @@ header {
   margin-right: 1.5em;
   width: 50%; 
   height: auto;
+}
+
+.angelica-ref  {
+    float: right;
+    margin-left: -1.5em;
+    height: 170px;
+    width: 74%;
+    margin-top: 2em;
 }
 
 @media only screen and (min-width: 25em) and (orientation: portrait) {
@@ -961,6 +973,13 @@ header {
     height: 180px;
     width: 38%;
   }
+
+  .angelica-ref  {
+    margin-left: .5em;
+    height: 192px;
+    width: 60%;
+    margin-top: 0;
+  }
 }
 
 @media only screen and (min-width: 47em) and (orientation: portrait) {
@@ -1040,6 +1059,12 @@ header {
     margin-left: 3em;
     margin-right: 3em;
     width: 39%;
+  }
+
+  .angelica-ref  {
+    margin-left: -1.5em;
+    height: 192px;
+    width: 54%;
   }
 }
 
@@ -1262,6 +1287,12 @@ header {
   .carmen-ref, .neus-ref {
     width: 30%;
   }
+
+  .angelica-ref  {
+    margin-left: 6em;
+    height: 245px;
+    width: 41%;
+  }
 }
 
 @media only screen and (min-width: 90em) {
@@ -1309,6 +1340,11 @@ header {
 
   .carmen-ref {
     width: 25%;
+  }
+
+  .angelica-ref  {
+    margin-left: 7em;
+    width: 36%;
   }
 
   .quote-container {
