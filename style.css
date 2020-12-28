@@ -4,7 +4,7 @@ body {
   color: #1B2D45;
   box-sizing: border-box;
   font-size: calc(16px + 0.2vw);
-  line-height: calc(1.5em + 0.5vw);
+  line-height: calc(1.5em + 0.1vw);
   margin: 0;
   letter-spacing: .06em;
   font-family: 'Quattrocento', serif;
@@ -12,9 +12,9 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Raleway', sans-serif;
-  letter-spacing: .15em;
+  letter-spacing: .1em;
   text-transform: uppercase;
-  line-height: calc(1em + 2vw);
+  line-height: calc(1em + 0.5vw);
   font-weight: 800;
 }
 
@@ -72,7 +72,7 @@ header {
   position: relative;
 }
 
-.circle, .logo, .triangle {
+.circle, .circles, .logo, .triangle {
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
@@ -2145,6 +2145,52 @@ footer a {
 
 .alejandra {
   background-image: url("images/us/alejandra.jpeg");
+}
+
+/* blog */
+.blog {
+  width: 50%;
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 3em;
+}
+
+.blog h1 {
+  font-size: 36px;
+  text-transform: none;
+  margin-bottom: 0;
+  font-weight: 800;
+}
+
+.blog .subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  text-transform: none;
+}
+
+.blog .date {
+  color: grey;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.highlighted {
+  font-weight: 800;
+}
+
+.blog-quote {
+  width: 70%;
+  
+  margin: auto;
+}
+.interview-quote {
+  font-size: 24px;
+}
+
+.author {
+  font-size: 21px;
+  font-weight: 900;
 }
 
 /* Menu styles */
