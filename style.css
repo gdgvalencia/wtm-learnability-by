@@ -2149,14 +2149,12 @@ footer a {
 
 /* blog */
 .blog {
-  width: 40%;
   margin: auto;
   margin-top: 5em;
   margin-bottom: 3em;
 }
 
 .blog h1 {
-  font-size: 36px;
   text-transform: none;
   margin-bottom: 0;
   font-weight: 800;
@@ -2251,8 +2249,16 @@ footer a {
     width: 60%;
     margin: auto;
   }
+}
 
-  
+@media only screen and (min-width: 90em) {
+  .blog {
+    width: 40%;
+  }
+
+  .blog h1 {
+    font-size: 32px;
+  }
 }
 
 /* Menu styles */
