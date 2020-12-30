@@ -32,7 +32,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #1bc197;
+  color: #4fe2bd;
   opacity:1;
 }
 
@@ -2149,6 +2149,7 @@ footer a {
 
 /* blog */
 .blog {
+  width: 80%;
   margin: auto;
   margin-top: 5em;
   margin-bottom: 3em;
@@ -2156,19 +2157,21 @@ footer a {
 
 .blog h1 {
   text-transform: none;
-  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 32px;
   font-weight: 800;
 }
 
 .blog .subtitle {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 22px;
   text-transform: none;
 }
 
 .blog .heading {
   margin: 2em 0 .5em 0;
+  line-height: 26px;
+  font-size: 18px;
 }
 
 .blog p {
@@ -2185,6 +2188,9 @@ footer a {
   width: 100%;
   height: 100%;
   margin-bottom: .8em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .highlighted {
@@ -2192,9 +2198,8 @@ footer a {
 }
 
 .blog-quote {
-  width: 78%;
   margin: auto;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .blog-quote p {
@@ -2219,14 +2224,7 @@ footer a {
   }
 
   .blog h1 { 
-    font-size: 26px;
     margin-bottom: 0.3em;
-    line-height: 32px;
-  }
-
-  .blog .subtitle {
-    font-size: 16px;
-    line-height: 22px;
   }
 
   .blog-quote {
@@ -2238,16 +2236,27 @@ footer a {
   .interview-quote {
     font-size: 18px;
   }
-
-  .blog .heading {
-    line-height: 26px;
-  }
 }
 
 @media only screen and (min-width: 25em) and (orientation: landscape) {
   .blog {
     width: 60%;
     margin: auto;
+  }
+
+  .blog-image {
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 47em) and (orientation: portrait) {
+   .blog-image {
+    width: 50%;
+    height: 50%;
+    
   }
 }
 
@@ -2258,6 +2267,23 @@ footer a {
 
   .blog h1 {
     font-size: 32px;
+    margin-bottom: 0;
+  }
+
+  .blog-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  .blog-quote {
+    width: 78%;
+    font-size: 18px;
+  }
+
+  .blog-image {
+    width: 90%;
+    height: 90%;
   }
 }
 
